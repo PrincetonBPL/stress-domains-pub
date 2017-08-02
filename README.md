@@ -1,5 +1,5 @@
 # Stress and Temporal Discounting: Do Domains Matter?
-## Johannes Haushofer, Chaning Jang, John Lynham, and Justin Abraham
+_Johannes Haushofer, Chaning Jang, John Lynham, and Justin Abraham_
 
 This is a public repository for analysis source code in "Stress and Temporal Discounting: Do Domains Matter?". We registered a [pre-analysis plan](https://www.socialscienceregistry.org/trials/934) with the AEA RCT Registry that outlines the research question, the experiment, the data, the identification strategy, and our hypotheses. The most recent version of the paper can be found [here](https://www.princeton.edu/haushofer/publications/Haushofer_Jang_Lynham_Stress_Domains_2017.02.10_jh.pdf).
 
@@ -14,10 +14,11 @@ This is a public repository for analysis source code in "Stress and Temporal Dis
 	- `do/*_clean.do`: These files prepare the data from each experiment to be merged.
 	- `custom_tables/`: Directory for .do files that render results from Stata into Latex tables.
 + `logs/`: Contains time-stamped log files documenting each execution of the source code.
++ `ztt/`: Contains Z-Tree .ztt files which are the programmed survey for all experiments.
 
 ### Data
 
-Releases of the source code will be packaged with only the final dataset used for analysis (`Stress_FinalWide.dta`). Nevertheless, the repo includes the portion of the code which produces the final data from intermediate datasets. The final dataset is stripped of personally identifiable information to protect participant privacy.
+`Stress_FinalWide.dta` is produced by `do/stress_append.do` using intermediate data produced by the files `do/*_clean.do`. We exclude the intermediate datasets and strip the final dataset of personally identifiable information to protect participant privacy. Nevertheless, the repo includes the portion of the code which produces the intermediate datasets.
 
 ### Replication
 

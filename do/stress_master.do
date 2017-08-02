@@ -21,9 +21,9 @@ cd ../../
 /* Specify directories */
 
 glo root_dir "`c(pwd)'"
-glo ado_dir "$root_dir/stata/ado"  			// .ado files
-glo do_dir "$root_dir/stata/do" 			// .do files
-glo log_dir "$root_dir/stata/logs"		 	// Log files
+glo ado_dir "$root_dir/code/ado"  			// .ado files
+glo do_dir "$root_dir/code/do" 			// .do files
+glo log_dir "$root_dir/code/logs"		 	// Log files
 glo data_dir "$root_dir/data"	 	 		// Data
 glo tab_dir "$root_dir/tables"		 		// Tables
 glo fig_dir "$root_dir/figures" 	 		// Figures
