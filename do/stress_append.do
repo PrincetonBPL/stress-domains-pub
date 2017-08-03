@@ -344,18 +344,14 @@ egen risk_category_z = weightave(risk_category), normby(control)
 ren crra risk_crra
 la var risk_crra "Constant relative risk aversion"
 
+egen risk_avgboxes = rowmean(boxchoice?)
+la var risk_avgboxes "Avg. no. of boxes opened"
+
 egen risk_avgratio = rowmean(riskratio*)
 la var risk_avgratio "Avg. risk ratio"
 
 egen risk_ratio_z = weightave(riskratio*), normby(control)
 la var risk_ratio_z "Std. risk ratio"
-
-ren riskpreference_amountinvested risk_investment
-la var risk_investment "Amt. invested"
-
-gen risk_index = risk_category_z if ~exp_tsst
-replace risk_index = risk_ratio_z if exp_tsst
-la var risk_index "Risk index"
 
 ren riskratio* risk_ratio*
 
@@ -522,19 +518,6 @@ la var mid_NAS_z "Std. NAS item (midline)"
 la var mid_NAS_r "Std. NAS item (midline)"
 
 saveold "$data_dir/Stress_FinalNAS.dta", replace
-
-*****************************************
-** Panel reshape for experiential risk **
-*****************************************
-
-use "$data_dir/Stress_FinalWide.dta", clear
-
-reshape long risk_ratio, i(sid) j(trial)
-
-la var trial "Experiential risk trial"
-la var risk_ratio "Risk ratio trial"
-
-saveold "$data_dir/Stress_FinalRisk.dta", replace
 
 *********************************
 ** Panel reshape for titration **

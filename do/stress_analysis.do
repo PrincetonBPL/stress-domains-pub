@@ -59,7 +59,7 @@ if $timeflag {
 
 	/* Treatment effect */
 
-	glo regvars "time_avgfrac time_avgindiff time_avgexponential time_auc time_decrimp time_stationarity"
+	glo regvars "$ytime"
 	glo regtitle "Treatment effects across experiments -- Temporal discounting"
 	glo regpath "REG-time"
 	do "$do_dir/custom_tables/reg-comparetreat.do"
@@ -76,14 +76,14 @@ if $timeflag {
 
 	/* Treatment effect */
 
-	glo regvars "time_avgfrac time_avgindiff time_avgexponential time_auc time_decrimp time_stationarity"
+	glo regvars "$ytime"
 	glo regtitle "Treatment effects with covariate adjustment -- Temporal discounting"
 	glo regpath "REG-timecontrols"
 	do "$do_dir/custom_tables/reg-comparetreat.do"
 
 	/* Randomization inference */
 
-	glo regvars "time_avgfrac time_avgindiff time_avgexponential time_auc time_decrimp time_stationarity"
+	glo regvars "$ytime"
 	glo regtitle "Treatment effects with randomization inference -- Temporal discounting"
 	glo regpath "REG-timerand"
 	/* do "$do_dir/custom_tables/reg-randtreat.do" */
@@ -109,7 +109,7 @@ if $riskflag {
 
 	/* Treatment effect */
 
-	glo regvars "risk_crra risk_avgratio"
+	glo regvars "$yrisk"
 	glo regtitle "Treatment effects across experiments -- Risk aversion"
 	glo regpath "REG-risk"
 	do "$do_dir/custom_tables/reg-comparetreat.do"
@@ -126,7 +126,7 @@ if $riskflag {
 
 	/* Treatment effect with controls */
 
-	glo regvars "risk_crra risk_avgratio"
+	glo regvars "$yrisk"
 	glo regtitle "Treatment effects with covariate adjustment -- Risk aversion"
 	glo regpath "REG-riskcontrols"
 	do "$do_dir/custom_tables/reg-comparetreat.do"

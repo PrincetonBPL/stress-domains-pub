@@ -32,9 +32,9 @@ adopath + "$ado_dir"
 
 /* What do you want to do? */
 
-glo cleandataflag = 1					// Convert and clean Z-Tree data
-glo appenddataflag = 1					// Harmonize all experiments into unified dataset
-glo summaryflag = 1						// Output summary statistics
+glo cleandataflag = 0					// Convert and clean Z-Tree data
+glo appenddataflag = 0					// Harmonize all experiments into unified dataset
+glo summaryflag = 0						// Output summary statistics
 glo regtablesflag = 1					// Output regression tables
 
 /* Choose experiments to process */
@@ -59,7 +59,8 @@ glo ydemo "age married children std_school unemployed quest_response4 quest_resp
 glo yquest "quest_response1 quest_response2 quest_response3 quest_response4 quest_response5 quest_response6 quest_response7 quest_response8 quest_response9 quest_response10 quest_response11 quest_response12"
 glo ypre "pre_frust pre_stress pre_pain pre_NAStot_z"
 glo ypost "post_frust post_stress post_NAS post_MSI"
-glo yrisk "risk_crra risk_investment risk_avgratio risk_ratio_z"
+glo ytime "time_avgfrac time_avgindiff time_avgexponential time_auc time_decrimp time_stationarity"
+glo yrisk "risk_crra risk_avgboxes"
 glo ycontrol "age married children std_school unemployed quest_response4 quest_response5 quest_response9 quest_bmi"
 
 ***************************************
