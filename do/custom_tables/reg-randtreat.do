@@ -78,18 +78,18 @@ forval i = 1/6 {
 
 		cap noi {
 
-			qui lincom `H`i''
+			cap lincom `H`i''
 			mat def B`i'[`j', 1] = r(estimate)
 			mat def SE`i'[`j', 1] = r(se)
 
-			qui test `H`i'' = 0
+			cap test `H`i'' = 0
 			mat def P`i'[`j', 1] = r(p)
 
 			loc surtest`i' "`surtest`i'' (`H`i'' = 0)"
 
 		}
 
-		if _rc & `length' < 2 {
+		if _rc | `length' < 2 {
 
 			loc H1 "1.treatment + 1.treatment#0.experiment"
 			loc H2 "1.treatment + 1.treatment#1.experiment"
@@ -98,11 +98,11 @@ forval i = 1/6 {
 			loc H5 "-1.treatment#0.experiment"
 			loc H6 "1.treatment#3.experiment - 1.treatment#1.experiment"
 
-			qui lincom `H`i''
+			cap lincom `H`i''
 			mat def B`i'[`j', 1] = r(estimate)
 			mat def SE`i'[`j', 1] = r(se)
 
-			qui test `H`i'' = 0
+			cap test `H`i'' = 0
 			mat def P`i'[`j', 1] = r(p)
 
 		}

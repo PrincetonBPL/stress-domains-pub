@@ -187,11 +187,11 @@ drop quest_re1 quest_re2 quest_re3 quest_re4 quest_re5 quest_re6 quest_re7 quest
 drop pre_VAS post_VAS
 
 ren pre_VAS12 pre_stress
-la var pre_stress "Stress"
+la var pre_stress "Self-reported stress"
 ren mid_VAS12 mid_stress
-la var mid_stress "Stress"
+la var mid_stress "Self-reported stress"
 ren post_VAS12 post_stress
-la var post_stress "Stress"
+la var post_stress "Self-reported stress"
 
 ren pre_VAS11 pre_frust
 la var pre_frust "Frustration"
@@ -217,18 +217,18 @@ foreach v of varlist *_frust *_stress *_NAS* {
 
 	egen `v'_z = weightave(`v'), normby(control)
 	loc varlabel = lower("`: var la `v''")
-	la var `v'_z "Std. `varlabel'"
+	la var `v'_z "`varlabel' (SD)"
 
 }
 
 egen pre_NAStot_z = weightave(pre_NAS*), normby(control)
-la var pre_NAStot_z "Negative affect (std.)"
+la var pre_NAStot_z "Negative affect (SD)"
 
 egen mid_NAStot_z = weightave(mid_NAS*), normby(control)
-la var mid_NAStot_z "Negative affect (std.)"
+la var mid_NAStot_z "Negative affect (SD)"
 
 egen post_NAStot_z = weightave(post_NAS*), normby(control)
-la var post_NAStot_z "Negative affect (std.)"
+la var post_NAStot_z "Negative affect (SD)"
 
 egen pre_MSI_z = weightave(pre_NAS* pre_stress), normby(control)
 la var pre_MSI_z "Mental state index"
@@ -240,22 +240,22 @@ egen post_MSI_z = weightave(post_NAS* post_stress), normby(control)
 la var post_MSI_z "Mental state index"
 
 gen pre_stress_r = .
-la var pre_stress_r "Std. stress"
+la var pre_stress_r "Self-reported stress (SD)"
 
 gen mid_stress_r = .
-la var mid_stress_r "Std. stress"
+la var mid_stress_r "Self-reported stress (SD)"
 
 gen post_stress_r = .
-la var post_stress_r "Std. stress"
+la var post_stress_r "Self-reported stress (SD)"
 
 gen pre_NAStot_r = .
-la var pre_NAStot_r "Negative affect (std.)"
+la var pre_NAStot_r "Negative affect (SD)"
 
 gen mid_NAStot_r = .
-la var mid_NAStot_r "Negative affect (std.)"
+la var mid_NAStot_r "Negative affect (SD)"
 
 gen post_NAStot_r = .
-la var post_NAStot_r "Negative affect (std.)"
+la var post_NAStot_r "Negative affect (SD)"
 
 gen pre_MSI_r = .
 la var pre_MSI_r "Mental state index"
@@ -317,20 +317,6 @@ foreach exp in exp_tsst exp_cpt exp_cpr {
 		replace post_NAS`i'_r = post_NAS`i'_`exp' if `exp'
 
 	}
-
-}
-
-foreach v of varlist mid_* {
-
-	loc varla : var la `v'
-	la var `v' "`varla' (midline)"
-
-}
-
-foreach v of varlist post_* {
-
-	loc varla : var la `v'
-	la var `v' "`varla' (endline)"
 
 }
 

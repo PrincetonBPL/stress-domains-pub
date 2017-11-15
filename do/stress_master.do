@@ -21,20 +21,20 @@ cd ../../
 /* Specify directories */
 
 glo root_dir "`c(pwd)'"
-glo ado_dir "$root_dir/code/ado"  			// .ado files
+glo ado_dir "$root_dir/code/ado"  		// .ado files
 glo do_dir "$root_dir/code/do" 			// .do files
-glo log_dir "$root_dir/code/logs"		 	// Log files
-glo data_dir "$root_dir/data"	 	 		// Data
-glo tab_dir "$root_dir/tables"		 		// Tables
-glo fig_dir "$root_dir/figures" 	 		// Figures
+glo log_dir "$root_dir/code/logs"		// Log files
+glo data_dir "$root_dir/data"	 	 	// Data
+glo tab_dir "$root_dir/tables"		 	// Tables
+glo fig_dir "$root_dir/figures" 	 	// Figures
 
 adopath + "$ado_dir"
 
 /* What do you want to do? */
 
-glo cleandataflag = 0					// Convert and clean Z-Tree data
-glo appenddataflag = 0					// Harmonize all experiments into unified dataset
-glo summaryflag = 0						// Output summary statistics
+glo cleandataflag = 1					// Convert and clean Z-Tree data
+glo appenddataflag = 1					// Harmonize all experiments into unified dataset
+glo summaryflag = 1						// Output summary statistics
 glo regtablesflag = 1					// Output regression tables
 
 /* Choose experiments to process */
@@ -124,12 +124,3 @@ di "Finished in `r(t1)' seconds."
 di as err "$errormsg"
 
 log close _all
-
-/**********
-** Notes **
-***********
-
-Reg endowment experiment, treatment
-Break out negative affect and run regressions
-Break down CENT by regular and reversed
-Drop pref inconsistencies for robustness

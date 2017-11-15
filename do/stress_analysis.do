@@ -17,8 +17,13 @@ if $nasflag {
 	/* Treatment effect */
 
 	glo regvars "mid_stress_r"
-	glo regtitle "Treatment effects across experiments -- Stress"
+	glo regtitle "Treatment effects across domains -- Stress"
 	glo regpath "REG-manipulation"
+	do "$do_dir/custom_tables/reg-comparetreat.do"
+
+	glo regvars "post_stress_r"
+	glo regtitle "Treatment effects across domains -- Stress measured at endline"
+	glo regpath "REG-poststress"
 	do "$do_dir/custom_tables/reg-comparetreat.do"
 
 	/* Control variables */
@@ -43,7 +48,7 @@ if $nasflag {
 	glo regvars "mid_stress_r"
 	glo regtitle "Treatment effects with randomization inference -- Stress"
 	glo regpath "REG-manipulationrand"
-	/* do "$do_dir/custom_tables/reg-randtreat.do" */
+	do "$do_dir/custom_tables/reg-randtreat.do"
 
 }
 
@@ -60,7 +65,7 @@ if $timeflag {
 	/* Treatment effect */
 
 	glo regvars "$ytime"
-	glo regtitle "Treatment effects across experiments -- Temporal discounting"
+	glo regtitle "Treatment effects across domains -- Temporal discounting"
 	glo regpath "REG-time"
 	do "$do_dir/custom_tables/reg-comparetreat.do"
 
@@ -86,7 +91,7 @@ if $timeflag {
 	glo regvars "$ytime"
 	glo regtitle "Treatment effects with randomization inference -- Temporal discounting"
 	glo regpath "REG-timerand"
-	/* do "$do_dir/custom_tables/reg-randtreat.do" */
+	do "$do_dir/custom_tables/reg-randtreat.do"
 
 	/* By time horizon */
 
@@ -110,7 +115,7 @@ if $riskflag {
 	/* Treatment effect */
 
 	glo regvars "$yrisk"
-	glo regtitle "Treatment effects across experiments -- Risk aversion"
+	glo regtitle "Treatment effects across domains -- Risk aversion"
 	glo regpath "REG-risk"
 	do "$do_dir/custom_tables/reg-comparetreat.do"
 
