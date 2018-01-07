@@ -137,3 +137,22 @@ if $riskflag {
 	do "$do_dir/custom_tables/reg-comparetreat.do"
 
 }
+
+///////////////////////////////
+// Regular vs. reversed CENT //
+///////////////////////////////
+
+/* Control variables */
+
+glo yfillmiss ""
+
+foreach v in $ycontrol pre_stress_r {
+
+	glo yfillmiss "$yfillmiss `v'_full `v'_miss"
+
+}
+
+glo regvars "mid_stress_r $ytime"
+glo regtitle "Treatment effects for regular and reversed Centipede Game"
+glo regpath "REG-centtreat"
+do "$do_dir/custom_tables/reg-centtreat.do"
