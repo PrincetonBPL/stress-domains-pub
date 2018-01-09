@@ -4,6 +4,8 @@
 ** Dependencies: Stuff from all five experiments
 ** Note: Change to appropriate user and server filepath
 
+version 13.1
+
 clear all
 set maxvar 10000
 set matsize 11000
@@ -37,19 +39,13 @@ glo appenddataflag = 1					// Harmonize all experiments into unified dataset
 glo summaryflag = 1						// Output summary statistics
 glo regtablesflag = 1					// Output regression tables
 
-/* Choose experiments to process */
-
-glo tsstflag = 1						// Trier Social Stress Test
-glo cptflag = 1							// Cold Pressor Task
-glo cprflag = 1							// Common Pool Resource (Centipede)
-
 /* Analysis options */
 
 glo nasflag = 1							// Manipulation checks
 glo timeflag = 1						// Panel regression on temporal discounting
 glo riskflag = 1						// Regression on risk preferences
 
-glo permutations = 10000				// Permutations for randmization inference
+glo permutations = 10				// Permutations for randmization inference
 glo USDconvertflag = 1 					// Convert KES to USD
 glo ppprate = 1 / 39.56					// KES to USD ppp factor (Source: World Bank, International Comparison Program database)
 
@@ -60,7 +56,7 @@ glo yquest "quest_response1 quest_response2 quest_response3 quest_response4 ques
 glo ypre "pre_frust pre_stress pre_pain pre_NAStot_z"
 glo ypost "post_frust post_stress post_NAS post_MSI"
 glo ytime "time_avgfrac time_avgindiff time_avgexponential time_auc time_decrimp time_stationarity"
-glo yrisk "risk_crra risk_avgboxes"
+glo yrisk "risk_crra"
 glo ycontrol "age married children std_school unemployed quest_response4 quest_response5 quest_response9 quest_bmi"
 
 ***************************************
@@ -85,9 +81,9 @@ if $cleandataflag {
 
 	cap noisily {
 
-		if $tsstflag do "$do_dir/tsst_clean.do"
-		if $cptflag do "$do_dir/cpt_clean.do"
-		if $cprflag do "$do_dir/cpr_clean.do"
+		do "$do_dir/tsst_clean.do"
+		do "$do_dir/cpt_clean.do"
+		do "$do_dir/cpr_clean.do"
 
 	}
 

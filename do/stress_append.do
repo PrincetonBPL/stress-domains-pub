@@ -9,9 +9,11 @@
 *********************
 
 use "$data_dir/TSST_Cleaned.dta", clear
-append using "$data_dir/CPT_Cleaned.dta" "$data_dir/Productivity_Cleaned.dta" "$data_dir/CPR_Cleaned.dta", gen(experiment) force
+append using "$data_dir/CPT_Cleaned.dta" "$data_dir/CPR_Cleaned.dta", gen(experiment) force
 
 la var experiment "Experiment"
+replace experiment = 3 if experiment == 2
+
 la def la_exp 0 "TSST-G" 1 "CPT" 2 "Productivity" 3 "CENT"
 la val experiment la_exp
 
@@ -26,8 +28,6 @@ la var exp_prod "Productivity"
 
 gen exp_cpr = experiment == 3
 la var exp_cpr "CENT"
-
-drop if exp_prod // Dropping productivity experiment
 
 *************************
 ** Clean combined data **
@@ -178,8 +178,6 @@ foreach v in quest_response4 quest_response5 {
 	la var ln`v' "Log `label'"
 }
 
-drop quest_re1 quest_re2 quest_re3 quest_re4 quest_re5 quest_re6 quest_re7 quest_re8 quest_re9 quest_re10 quest_re11 quest_re12 quest_rt1 quest_rt2 quest_rt3 quest_rt4 quest_rt5 quest_rt6 quest_rt7 quest_rt8 quest_rt9 quest_rt10 quest_rt11 quest_rt12
-
 *********************
 ** Negative affect **
 *********************
@@ -328,7 +326,7 @@ ren risk risk_category
 egen risk_category_z = weightave(risk_category), normby(control)
 
 ren crra risk_crra
-la var risk_crra "Constant relative risk aversion"
+la var risk_crra "Coefficient of relative risk aversion"
 
 egen risk_avgboxes = rowmean(boxchoice?)
 la var risk_avgboxes "Avg. no. of boxes opened"

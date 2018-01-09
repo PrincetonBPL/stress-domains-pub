@@ -1,8 +1,8 @@
-** Title: reg-comparetreat.do
+** Title: reg-notsst.do
 ** Author: Justin Abraham
-** Desc: Estimates treatment effects and compares across experiments
+** Desc: Estimates treatment effects and compares across CPT and CENT only
 ** Input: Stress_FinalWide.dta
-** Output: reg-comparetreat.do
+** Output: reg-notsst.do
 
 /* Create empty table */
 
@@ -161,11 +161,9 @@ if `length' > 1 {
 
 	forval i = 1/6 {
 
-		cap {
-			qui test `surtest`i''
-			sigstar, p(`r(p)') prec(2) pstar
-			estadd loc sur_p = r(pstar): col`i'
-		}
+		qui test `surtest`i''
+		sigstar, p(`r(p)') prec(2) pstar
+		estadd loc sur_p = r(pstar): col`i'
 
 	}
 
