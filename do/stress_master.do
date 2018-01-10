@@ -18,36 +18,35 @@ timer on 1
 ** Setup **
 ***********
 
-cd ../../
+cd ../
 
 /* Specify directories */
 
 glo root_dir "`c(pwd)'"
-glo ado_dir "$root_dir/code/ado"  		// .ado files
-glo do_dir "$root_dir/code/do" 			// .do files
-glo log_dir "$root_dir/code/logs"		// Log files
-glo data_dir "$root_dir/data"	 	 	// Data
-glo tab_dir "$root_dir/tables"		 	// Tables
-glo fig_dir "$root_dir/figures" 	 	// Figures
+glo ado_dir "$root_dir/ado"  		// .ado files
+glo do_dir "$root_dir/do" 			// .do files
+glo log_dir "$root_dir/logs"		// Log files
+glo data_dir "$root_dir/data"	 	// Data
+glo tab_dir "$root_dir/latex"		// Tables
 
 adopath + "$ado_dir"
 
 /* What do you want to do? */
 
-glo cleandataflag = 1					// Convert and clean Z-Tree data
-glo appenddataflag = 1					// Harmonize all experiments into unified dataset
-glo summaryflag = 1						// Output summary statistics
-glo regtablesflag = 1					// Output regression tables
+glo cleandataflag = 1				// Convert and clean Z-Tree data
+glo appenddataflag = 1				// Harmonize all experiments into unified dataset
+glo summaryflag = 1					// Output summary statistics
+glo regtablesflag = 1				// Output regression tables
 
 /* Analysis options */
 
-glo nasflag = 1							// Manipulation checks
-glo timeflag = 1						// Panel regression on temporal discounting
-glo riskflag = 1						// Regression on risk preferences
+glo nasflag = 1						// Manipulation checks
+glo timeflag = 1					// Panel regression on temporal discounting
+glo riskflag = 1					// Regression on risk preferences
 
-glo permutations = 10000				// Permutations for randmization inference
-glo USDconvertflag = 1 					// Convert KES to USD
-glo ppprate = 1 / 39.56					// KES to USD ppp factor (Source: World Bank, International Comparison Program database)
+glo permutations = 10000			// Permutations for randmization inference
+glo USDconvertflag = 1 				// Convert KES to USD
+glo ppprate = 1 / 39.56				// KES to USD ppp factor (Source: World Bank, International Comparison Program database)
 
 /* List of variables */
 
