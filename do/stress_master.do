@@ -45,7 +45,7 @@ glo nasflag = 1							// Manipulation checks
 glo timeflag = 1						// Panel regression on temporal discounting
 glo riskflag = 1						// Regression on risk preferences
 
-glo permutations = 10				// Permutations for randmization inference
+glo permutations = 10000				// Permutations for randmization inference
 glo USDconvertflag = 1 					// Convert KES to USD
 glo ppprate = 1 / 39.56					// KES to USD ppp factor (Source: World Bank, International Comparison Program database)
 
