@@ -10,20 +10,23 @@ Releases typically contain the data, source code, survey instruments, manuscript
 ### Data
 
 + The directories `*_raw/` contain each experiment's raw data. These consist of `.xls` files produced by Z-Tree and `.dta` files containing subject demographics. We strip subject data of personally identifiable information to protect participant privacy.
-+ `Stress_FinalWide.dta` is the final subject-level dataset containing data from all three lab experiments. This dataset is used to produce Tables .
-+ `Stress_FinalTime.dta` is the final subject-by-question level dataset made by reshaping `Stress_FinalWide.dta`. This dataset is used to produce Tables
++ `*_Cleaned.dta` are intermediate datasets to be further cleaned.
++ `Stress_FinalWide.dta` is the final subject-level dataset containing data from all three lab experiments. This dataset is used to produce all tables in the manuscript.
++ `Stress_FinalTime.dta` is the final subject-by-question level dataset made by reshaping `Stress_FinalWide.dta` with temporal discounting variables.
++ `Stress_FinalNAS.dta` is the final subject-by-question level dataset made by reshaping `Stress_FinalWide.dta` with negative affect variables.
++ `stress_data_id` is an encrypted volume containing data before de-identification. Available only to authorized users.
 
 ### Source Code
 
-+ `ado/`: Contains canned functions used in data manipulation, analysis, and publishing.
++ `ado/`: Contains canned scripts used in data manipulation, analysis, and publishing.
 + `do/`: Contains .do files used to replicate results in the paper.
-	- `do/stress_master.do`: This is the master .do file that reproduces all components of the data analysis.
-	- `do/stress_append.do`: This merges and cleans raw data from all experiments into the analysis dataset.
-	- `do/stress_summary.do`: This produces summary statistics and conducts the randomization check.
-	- `do/stress_analysis.do`: This estimates treatment effects: the paper's highlighted results.
-	- `do/*_clean.do`: These files prepare the data from each experiment to be merged.
+	- `do/stress_master.do`: This script is the master .do file that reproduces all components of the data analysis. Users need only execute this file to replicate results. Requires Stata 13.1 or higher.
+	- `do/stress_append.do`: This script takes `*_Cleaned.dta` and outputs `Stress_FinalWide.dta`.
+	- `do/stress_summary.do`: This script produces summary statistics and conducts the randomization check.
+	- `do/stress_analysis.do`: This script estimates treatment effects: the paper's highlighted results.
+	- `do/*_clean.do`: These files prepare raw data from each experiment and produces intermediate datasets `*_Cleaned.dta`.
 	- `custom_tables/`: Directory for .do files that render tables from Stata into Latex.
-+ `ztt/`: Contains .ztt files which implement the experimental protocol on Z-Tree.
++ `ztt/`: Contains the .ztt files that implement the experimental protocol on Z-Tree.
 
 ### Contact
 

@@ -1,0 +1,388 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/ericjang/Dropbox-Busara/Dropbox/busara/6_Projects/B04coldpressor/STATA/Data Files/Sessions/cleannew1.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}13 Aug 2013, 11:24:04
+{txt}
+{com}. set more off
+{txt}
+{com}. set maxvar 32000
+
+{txt}
+{com}. ** Set directory to your own local directory when using.  Only the part until DROPBOX will be different **
+. cd "/Users/ericjang/Dropbox-Busara/Dropbox/busara/6_Projects/B04coldpressor/STATA/Data Files/Sessions"
+{res}/Users/ericjang/Dropbox-Busara/Dropbox/busara/6_Projects/B04coldpressor/STATA/Data Files/Sessions
+{txt}
+{com}. 
+. use rawsessions.dta, clear
+{txt}
+{com}. 
+. ****************************
+. *** Create New Variables ***
+. ****************************
+.         egen sid = group(session Subject)
+{txt}
+{com}.         egen treat = max(control), by(sid)
+{txt}
+{com}.         egen risk = max(MPLChoice), by(sid)
+{txt}
+{com}.         egen bdprofit = max(BDProfit), by(sid)
+{txt}
+{com}.         gen crazycheck1 = ChoseSS1 if TREATMENTID==3
+{txt}(2821 missing values generated)
+
+{com}.         replace crazycheck1 = 1-crazycheck1
+{txt}(235 real changes made)
+
+{com}.         egen crazy1 = max(crazycheck1), by(sid)
+{txt}
+{com}.         gen crazycheck2 = ChoseSS2 if TREATMENTID==3
+{txt}(2821 missing values generated)
+
+{com}.         egen crazy2 = max(crazycheck2), by(sid)
+{txt}
+{com}.         
+.         order sid sessionnum Subject treat watertemp1 risk crazy1 crazy2
+{txt}
+{com}. 
+.                 * Add treatment status for Session 10 & 11
+.                 replace treat = 1 if sessionnum==10 & (Subject == 3 | Subject == 4)
+{txt}(24 real changes made)
+
+{com}.                 replace treat = 1 if sessionnum==11 & (Subject == 2 | Subject == 3 | Subject == 7)
+{txt}(36 real changes made)
+
+{com}.         
+.         *** Clean VAS ***
+.         forvalues i=1/12 {c -(}
+{txt}  2{com}.                 gen pre1_VAS`i' = response`i' if TREATMENTID== 1
+{txt}  3{com}.                 egen pre_VAS`i' = max(pre1_VAS`i'), by(sid)
+{txt}  4{com}.                 drop pre1_VAS`i'
+{txt}  5{com}.                 gen post1_VAS`i' = response`i' if TREATMENTID== 9
+{txt}  6{com}.                 egen post_VAS`i' = max(post1_VAS`i'), by(sid)
+{txt}  7{com}.                 drop post1_VAS`i'
+{txt}  8{com}.         {c )-}
+{txt}(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+(2821 missing values generated)
+
+{com}.         
+.         gen mid1_VAS11 = response1 if TREATMENTID== 4
+{txt}(2821 missing values generated)
+
+{com}.         egen mid_VAS11 = max(mid1_VAS11), by(sid)
+{txt}
+{com}.         drop mid1_VAS11
+{txt}
+{com}.         
+.         gen mid1_VAS12 = response2 if TREATMENTID== 4
+{txt}(2821 missing values generated)
+
+{com}.         egen mid_VAS12 = max(mid1_VAS12), by(sid)
+{txt}
+{com}.         drop mid1_VAS12
+{txt}
+{com}.         
+.         gen diff1_VAS11 = post_VAS11 - pre_VAS11
+{txt}
+{com}.         gen diff1_VAS12 = post_VAS12 - pre_VAS12
+{txt}
+{com}.         
+.         gen diff2_VAS11 = mid_VAS11 - pre_VAS11
+{txt}
+{com}.         gen diff2_VAS12 = mid_VAS12 - pre_VAS12
+{txt}
+{com}.         
+.         gen diff3_VAS11 = post_VAS11 - mid_VAS11
+{txt}
+{com}.         gen diff3_VAS12 = post_VAS12 - mid_VAS12
+{txt}
+{com}.         
+.         
+.         *** Clean Small TP ***
+.         
+.         forvalues i=1/9 {c -(}
+{txt}  2{com}.                 gen TP_response`i' = 1 if finalchoice`i' < 120
+{txt}  3{com}.                 replace TP_response`i' = 0 if finalchoice`i' >120 & finalchoice`i' != .
+{txt}  4{com}.         {c )-}
+{txt}(2892 missing values generated)
+(71 real changes made)
+(2901 missing values generated)
+(80 real changes made)
+(2940 missing values generated)
+(119 real changes made)
+(2886 missing values generated)
+(65 real changes made)
+(2902 missing values generated)
+(81 real changes made)
+(2933 missing values generated)
+(112 real changes made)
+(2927 missing values generated)
+(106 real changes made)
+(2956 missing values generated)
+(135 real changes made)
+(2988 missing values generated)
+(167 real changes made)
+
+{com}.         
+.         egen TPfract1 = rowmean(TP_response1 TP_response2 TP_response3)
+{txt}(2821 missing values generated)
+
+{com}.         egen TPfract2 = rowmean(TP_response4 TP_response5 TP_response6)
+{txt}(2821 missing values generated)
+
+{com}.         egen TPfract3 = rowmean(TP_response7 TP_response8 TP_response9)
+{txt}(2821 missing values generated)
+
+{com}.         
+.         egen fractTP1 = max(TPfract1), by(sid)
+{txt}
+{com}.         egen fractTP2 = max(TPfract2), by(sid)
+{txt}
+{com}.         egen fractTP3 = max(TPfract3), by(sid)
+{txt}
+{com}.         
+.         replace fractTP1 = 1-fractTP1
+{txt}(3056 real changes made)
+
+{com}.         replace fractTP2 = 1-fractTP2
+{txt}(3056 real changes made)
+
+{com}.         replace fractTP3 = 1-fractTP3
+{txt}(3056 real changes made)
+
+{com}.         
+.         *Switching behavior
+.         
+.         gen TP1_switch1 = 1 if TP_response1 != TP_response2
+{txt}(3013 missing values generated)
+
+{com}.         gen TP1_switch2 = 1 if TP_response2 != TP_response3 
+{txt}(2999 missing values generated)
+
+{com}.         egen numswitchTP1 = rowtotal(TP1_switch1 TP1_switch2)
+{txt}
+{com}.         
+.         gen TP2_switch1 = 1 if TP_response4 != TP_response5
+{txt}(3014 missing values generated)
+
+{com}.         gen TP2_switch2 = 1 if TP_response5 != TP_response6
+{txt}(3005 missing values generated)
+
+{com}.         egen numswitchTP2 = rowtotal(TP2_switch1 TP2_switch2)
+{txt}
+{com}.         
+.         gen TP3_switch1 = 1 if TP_response7 != TP_response8
+{txt}(2985 missing values generated)
+
+{com}.         gen TP3_switch2 = 1 if TP_response8 != TP_response9 
+{txt}(2988 missing values generated)
+
+{com}.         egen numswitchTP3 = rowtotal(TP3_switch1 TP3_switch2)
+{txt}
+{com}.         
+.         egen TPnumswitch1 = max(numswitchTP1), by(sid)
+{txt}
+{com}.         egen TPnumswitch2 = max(numswitchTP2), by(sid)
+{txt}
+{com}.         egen TPnumswitch3 = max(numswitchTP3), by(sid)
+{txt}
+{com}.         
+.         gen TPsuperconsistent = 1 if numswitchTP1 == 1 & numswitchTP2 == 1 & numswitchTP3 ==1
+{txt}(3028 missing values generated)
+
+{com}.         replace TPsuperconsistent = 0 if TPsuperconsistent==.
+{txt}(3028 real changes made)
+
+{com}.         
+.         egen superconsistentTP = max(TPsuperconsistent), by(sid)
+{txt}
+{com}.         
+.         ***********************
+.         *** Clean Titration ***
+.         ***********************
+.         
+.         ** Generate Indifference Points **
+.         gen indiff1 = SSAmt0m3m5 - abs(SSAmt0m3m5-SSAmt0m3m4)/2 if Response0m3m5==1
+{txt}(2929 missing values generated)
+
+{com}.         replace indiff1 = SSAmt0m3m5 + abs(SSAmt0m3m5-SSAmt0m3m4)/2 if Response0m3m5==0
+{txt}(108 real changes made)
+
+{com}.         
+.         gen indiff2 = SSAmt0m6m5 - abs(SSAmt0m6m5-SSAmt0m6m4)/2 if Response0m6m5==1
+{txt}(2919 missing values generated)
+
+{com}.         replace indiff2 = SSAmt0m6m5 + abs(SSAmt0m6m5-SSAmt0m6m4)/2 if Response0m6m5==0
+{txt}(98 real changes made)
+
+{com}.         
+.         gen indiff3 = SSAmt0m9m5 - abs(SSAmt0m9m5-SSAmt0m9m4)/2 if Response0m9m5==1
+{txt}(2909 missing values generated)
+
+{com}.         replace indiff3 = SSAmt0m9m5 + abs(SSAmt0m9m5-SSAmt0m9m4)/2 if Response0m9m5==0
+{txt}(88 real changes made)
+
+{com}.         
+.         gen indiff4 = SSAmt0m12m5 - abs(SSAmt0m12m5-SSAmt0m12m4)/2 if Response0m12m5==1
+{txt}(2913 missing values generated)
+
+{com}.         replace indiff4 = SSAmt0m12m5 + abs(SSAmt0m12m5-SSAmt0m12m4)/2 if Response0m12m5==0
+{txt}(92 real changes made)
+
+{com}.         
+.         gen indiff5 = SSAmt6m9m5 - abs(SSAmt6m9m5-SSAmt6m9m4)/2 if Response6m9m5==1
+{txt}(2941 missing values generated)
+
+{com}.         replace indiff5 = SSAmt6m9m5 + abs(SSAmt6m9m5-SSAmt6m9m4)/2 if Response6m9m5==0
+{txt}(120 real changes made)
+
+{com}.         
+.         gen indiff6 = SSAmt6m12m5 - abs(SSAmt6m12m5-SSAmt6m12m4)/2 if Response6m12m5==1
+{txt}(2938 missing values generated)
+
+{com}.         replace indiff6 = SSAmt6m12m5 + abs(SSAmt6m12m5-SSAmt6m12m4)/2 if Response6m12m5==0
+{txt}(117 real changes made)
+
+{com}.         
+.         ** Generate Discount Rates **
+.         gen delta1 = -ln(indiff1/200)/.25
+{txt}(2821 missing values generated)
+
+{com}.         gen delta2 = -ln(indiff2/200)/.5
+{txt}(2821 missing values generated)
+
+{com}.         gen delta3 = -ln(indiff3/200)/.75
+{txt}(2821 missing values generated)
+
+{com}.         gen delta4 = -ln(indiff4/200)
+{txt}(2821 missing values generated)
+
+{com}.         gen delta5 = -ln(indiff5/200)/.25
+{txt}(2821 missing values generated)
+
+{com}.         gen delta6 = -ln(indiff6/200)/.5
+{txt}(2821 missing values generated)
+
+{com}.         
+.         ** Index for Decreasing Impatience **
+.         gen decreaseimpatience = delta4-delta2
+{txt}(2821 missing values generated)
+
+{com}.         
+.         ** Index for Departure from Stationarity **
+.         gen departure = delta6-delta2
+{txt}(2821 missing values generated)
+
+{com}.         
+.         ** Generate fraction of patient responses **
+.         egen fract1 = rowmean(Response0m3m*)
+{txt}(2821 missing values generated)
+
+{com}.         egen fract2 = rowmean(Response0m6m*)
+{txt}(2821 missing values generated)
+
+{com}.         egen fract3 = rowmean(Response0m9m*)
+{txt}(2821 missing values generated)
+
+{com}.         egen fract4 = rowmean(Response0m12m*)
+{txt}(2821 missing values generated)
+
+{com}.         egen fract5 = rowmean(Response6m9m*)
+{txt}(2821 missing values generated)
+
+{com}.         egen fract6 = rowmean(Response6m12m*)
+{txt}(2821 missing values generated)
+
+{com}.         
+.         replace fract1 = 1-fract1
+{txt}(206 real changes made)
+
+{com}.         replace fract2 = 1-fract2
+{txt}(212 real changes made)
+
+{com}.         replace fract3 = 1-fract3
+{txt}(211 real changes made)
+
+{com}.         replace fract4 = 1-fract4
+{txt}(217 real changes made)
+
+{com}.         replace fract5 = 1-fract5
+{txt}(191 real changes made)
+
+{com}.         replace fract6 = 1-fract6
+{txt}(194 real changes made)
+
+{com}.         
+.         
+.         ** Generate Consistency Checks **
+.         gen cons1 = 1 if Response0m3m1==Response0m3m6
+{txt}(31 missing values generated)
+
+{com}.         gen cons2 = 1 if Response0m6m1==Response0m6m6
+{txt}(32 missing values generated)
+
+{com}.         gen cons3 = 1 if Response0m9m1==Response0m9m6
+{txt}(22 missing values generated)
+
+{com}.         gen cons4 = 1 if Response0m12m1==Response0m12m6
+{txt}(26 missing values generated)
+
+{com}.         gen cons5 = 1 if Response6m9m1==Response6m9m6
+{txt}(66 missing values generated)
+
+{com}.         gen cons6 = 1 if Response6m12m1==Response6m12m6
+{txt}(56 missing values generated)
+
+{com}.         
+.         * Keep Necessary Variables and Reshape *
+.         keep if fract6!=.
+{txt}(2821 observations deleted)
+
+{com}.         keep sid sessionnum Subject treat indiff* delta* decreaseimpatience departure fract* risk cons* fractTP* TPnumswitch* superconsistentTP diff*_VAS* bdprofit crazy*
+{txt}
+{com}.         
+.         reshape long indiff delta fract cons, i(sid) j(type)
+{txt}(note: j = 1 2 3 4 5 6)
+
+Data{col 36}wide{col 43}->{col 48}long
+{hline 77}
+Number of obs.                 {res}     235   {txt}->{res}    1410
+{txt}Number of variables            {res}      49   {txt}->{res}      30
+{txt}j variable (6 values)                     ->   {res}type
+{txt}xij variables:
+            {res}indiff1 indiff2 ... indiff6   {txt}->   {res}indiff
+               delta1 delta2 ... delta6   {txt}->   {res}delta
+               fract1 fract2 ... fract6   {txt}->   {res}fract
+                  cons1 cons2 ... cons6   {txt}->   {res}cons
+{txt}{hline 77}
+
+{com}.         
+. 
+{txt}end of do-file
+
+{com}. br
+
+. 

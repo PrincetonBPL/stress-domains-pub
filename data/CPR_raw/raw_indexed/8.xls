@@ -1,0 +1,510 @@
+150303_1244	1	globals	Period	NumPeriods	RepeatTreatment	AuctionStop	AuctionNoStop	
+150303_1244	1	globals	1	1	0	0	0	
+150303_1244	1	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	control	CorrectCounter	StartTime	TestMouseX	TestMouseY	TestMouseRT	TestOkButtonRT	TimeOKTestOkButtonOK	TimePlotInputTestMouseOK	
+150303_1244	1	subjects	1	1	1	0	0	1	0	0	0	539495.902	9.839816933638446	25.85812356979406	16.56700000003912	59.74800000002142	-58	-15	
+150303_1244	1	subjects	1	2	1	0	0	1	0	0	0	539495.902	29.06178489702516	14.87414187643022	59.51500000001397	56.23800000001211	-55	-58	
+150303_1244	1	subjects	1	3	1	0	0	1	0	0	0	539495.902	19.90846681922197	-30.89244851258582	12.0899999999674	10.31099999998696	-9	-10	
+150303_1244	1	subjects	1	4	1	0	0	1	0	0	0	539495.902	5.26315789473685	-11.21281464530892	11.95000000006985	9.687000000034459	-8	-10	
+150303_1244	1	subjects	1	5	1	0	0	1	0	0	0	539495.902	-18.99313501144165	-29.06178489702516	13.82200000004377	10.17099999997299	-9	-12	
+150303_1244	1	summary	Period	
+150303_1244	1	summary	1	
+150303_1244	1	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	
+150303_1244	1	session	1	0	0	0	0	0	0	
+150303_1244	1	session	2	0	0	0	0	0	0	
+150303_1244	1	session	3	0	0	0	0	0	0	
+150303_1244	1	session	4	0	0	0	0	0	0	
+150303_1244	1	session	5	0	0	0	0	0	0	
+150303_1244	2	globals	Period	NumPeriods	RepeatTreatment	
+150303_1244	2	globals	1	1	0	
+150303_1244	2	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	response[1]	response[2]	response[3]	response[4]	response[5]	response[6]	response[7]	response[8]	response[9]	response[10]	response[11]	response[12]	RT[1]	RT[2]	RT[3]	RT[4]	RT[5]	RT[6]	RT[7]	RT[8]	RT[9]	RT[10]	RT[11]	RT[12]	counter	StartTime	PointerPosition	Responded	numberL	digit1L	digit2L	digit3L	digit4L	numdigitsL	numberR	digit1R	digit2R	digit3R	digit4R	numdigitsR	TestMouseX	TestMouseY	InvestmentFactor	TimePlotInputQuestion1distressedOK	TimePlotInputQuestion2upsetOK	TimePlotInputQuestion3guiltyOK	TimePlotInputQuestion4ashamedOK	TimePlotInputQuestion5hostileOK	TimePlotInputQuestion6irritableOK	TimePlotInputQuestion7nervousOK	TimePlotInputQuestion8jitteryOK	TimePlotInputQuestion9scaredOK	TimePlotInputQuestion10afraidOK	TimePlotInputQuestion11frustratedOK	TimePlotInputQuestion12stressedOK	
+150303_1244	2	subjects	1	1	1	0	0	1	1	48	30	10	35	5	40	46	51	21	10	70	61	50.91899999999441	41.49600000004284	17.47199999995064	12.27700000000186	12.19999999995343	14.10300000000279	12.90099999995437	21.35599999991246	14.07200000004377	8.970000000088476	18.56400000001304	16.00600000005215	12	540369.554	72.59887005649716	1	39	0	0	0	0	2	61	1	6	99	99	2	35.7	76.34999999999999	1	11	20	44	49	50	47	49	40	47	53	43	46	
+150303_1244	2	subjects	1	2	1	0	0	1	1	50	37	32	14	64	44	50	63	50	63	59	62	531.7600000000093	28.89099999994505	19.65599999995902	18.7510000000475	20.84199999994598	15.8190000000177	12.65200000000186	15.6929999999702	14.19599999999628	12.9330000000773	19.40600000007544	11.87199999997392	12	540369.554	74.57627118644066	1	38	0	0	0	0	2	62	2	6	99	99	2	51.975	51.675	1	-470	33	42	43	41	46	49	46	47	49	42	50	
+150303_1244	2	subjects	1	3	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	519.8420000000624	17.19099999999162	18.15800000005402	13.24399999994785	20.01499999989756	14.16500000003725	17.14500000001863	16.97299999999814	10.03100000007544	13.76000000000931	17.01900000008754	9.672000000020489	12	540369.554	-57.62711864406781	1	100	0	0	0	0	3	0	0	99	99	99	1	27.3	50.625	1	-458	45	43	48	42	48	45	45	52	48	45	52	
+150303_1244	2	subjects	1	4	1	0	0	1	1	0	0	7	0	0	0	0	0	0	0	41	0	533.1800000000512	14.94499999994878	19.59400000004098	10.4989999999525	17.44099999999162	12.16799999994692	10.14000000001397	11.37199999997392	8.986000000033528	9.282000000006519	19.67099999997299	8.408000000054017	12	540369.554	-62.42937853107345	1	100	0	0	0	0	3	0	0	99	99	99	1	34.125	71.09999999999999	1	-472	47	42	51	44	49	52	50	53	52	42	53	
+150303_1244	2	subjects	1	5	1	0	0	1	1	85	100	84	65	100	95	100	75	96	70	95	95	532.8990000000922	12.69900000002235	38.64099999994505	15.86499999999069	16.59899999992922	12.57400000002235	14.08699999994133	13.75899999996182	12.23100000002887	9.60999999998603	17.2850000000326	10.67000000004191	12	540369.554	144.0677966101695	1	5	0	0	0	0	1	95	5	9	99	99	2	30.975	48.525	1	-471	49	23	46	45	49	48	48	49	52	44	51	
+150303_1244	2	summary	Period	
+150303_1244	2	summary	1	
+150303_1244	2	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	
+150303_1244	2	session	1	0	0	0	0	0	0	
+150303_1244	2	session	2	0	0	0	0	0	0	
+150303_1244	2	session	3	0	0	0	0	0	0	
+150303_1244	2	session	4	0	0	0	0	0	0	
+150303_1244	2	session	5	0	0	0	0	0	0	
+150303_1244	3	globals	Period	NumPeriods	RepeatTreatment	
+150303_1244	3	globals	1	1	0	
+150303_1244	3	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	numresponse	PayTrial	AllTrialCounter	sixmonth	twelmonth	now1	now2	now3	six1	six2	six3	control	TimeOKInfoStageOK	StartTime	Response[1]	Response[2]	Response[3]	RT[1]	RT[2]	RT[3]	ChosenAmt[1]	ChosenAmt[2]	ChosenAmt[3]	ChosenDel[1]	ChosenDel[2]	ChosenDel[3]	IgnoredAmt[1]	IgnoredAmt[2]	IgnoredAmt[3]	IgnoredDel[1]	IgnoredDel[2]	IgnoredDel[3]	SSAmt[1]	SSAmt[2]	SSAmt[3]	SSDel[1]	SSDel[2]	SSDel[3]	LLAmt[1]	LLAmt[2]	LLAmt[3]	LLDel[1]	LLDel[2]	LLDel[3]	ChoseLL[1]	ChoseLL[2]	ChoseLL[3]	ChoseSS[1]	ChoseSS[2]	ChoseSS[3]	counter	x	y	PayAmt	PayDel	TimeOKInfoStagePrecompcheckOK	number	digit1	digit2	digit3	digit4	digit5	digit6	digit7	digit8	digit9	digit10	digit11	numdigits	TestMouseX	TestMouseY	TimeOKInfoStage2OK	TimeOKInfoStagePrecompcheck2OK	TimeOKInfoStage3OK	TimeOKInfoStagePrecompcheck3OK	TimePlotInput1OK	TimePlotInputQuestion1AMOUNTOK	TimePlotInputQuestion2TIMEOK	TimePlotInput2OK	TimePlotInputQuestion3AMOUNTOK	TimePlotInputQuestion4TIMEOK	TimePlotInput3OK	TimePlotInputQuestion5AMOUNTOK	TimePlotInputQuestion6TIMEOK	
+150303_1244	3	subjects	1	1	1	0	0	1	2	3	3	4	500	100	100	30	55	95	75	55	0	162	540864.966	0	500	9	11.49800000002142	5.663000000058673	3.027000000001863	500	0	0	6	0	0	0	0	0	0	0	0	100	0	0	0	0	0	500	0	0	6	0	0	1	0	0	0	0	0	3	68.75000000000003	-17.5	500	6	192	9	9	99	99	99	99	99	99	99	99	99	99	1	16.275	58.5	192	199	199	196	156	54	49	149	53	53	191	56	58	
+150303_1244	3	subjects	1	2	1	0	0	1	2	3	1	4	500	100	100	30	55	95	75	55	0	162	540864.966	0	500	9	13.86899999994785	12.40200000000186	5.554000000003725	500	0	0	6	0	0	0	0	0	0	0	0	100	0	0	0	0	0	500	0	0	6	0	0	1	0	0	0	0	0	3	49.58333333333334	20	100	0	194	9	9	99	99	99	99	99	99	99	99	99	99	1	34.65	61.65	192	178	189	191	145	37	47	176	39	41	188	49	56	
+150303_1244	3	subjects	1	3	1	0	0	1	2	3	3	4	500	100	100	30	55	95	75	55	0	133	540864.966	0	500	9	22.58899999991991	8.922999999951571	31.5899999999674	500	0	0	6	0	0	0	0	0	0	0	0	100	0	0	0	0	0	500	0	0	6	0	0	1	0	0	0	0	0	3	5.416666666666657	-2.5	500	6	178	9	9	99	99	99	99	99	99	99	99	99	99	1	33.6	42.75	189	142	149	190	171	45	46	162	51	53	179	53	30	
+150303_1244	3	subjects	1	4	1	0	0	1	2	3	2	4	500	100	100	30	55	95	75	55	0	161	540864.966	0	500	9	59.73300000000745	27.59600000001956	4.586999999941327	500	0	0	6	0	0	0	0	0	0	0	0	100	0	0	0	0	0	500	0	0	6	0	0	1	0	0	0	0	0	3	84.58333333333334	-21.66666666666666	500	6	191	9	9	99	99	99	99	99	99	99	99	99	99	1	37.275	69	191	196	194	193	145	46	50	180	53	56	143	34	57	
+150303_1244	3	subjects	1	5	1	0	0	1	2	3	2	4	500	100	100	30	55	95	75	55	0	155	540864.966	0	500	9	10.29599999997299	8.143000000040047	3.697999999974854	500	0	0	6	0	0	0	0	0	0	0	0	100	0	0	0	0	0	500	0	0	6	0	0	1	0	0	0	0	0	3	-32.91666666666666	-10.83333333333333	500	6	194	9	9	99	99	99	99	99	99	99	99	99	99	1	21.525	46.95	192	175	197	195	163	43	46	189	50	55	193	53	58	
+150303_1244	3	summary	Period	
+150303_1244	3	summary	1	
+150303_1244	3	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	
+150303_1244	3	session	1	0	0	0	0	0	0	
+150303_1244	3	session	2	0	0	0	0	0	0	
+150303_1244	3	session	3	0	0	0	0	0	0	
+150303_1244	3	session	4	0	0	0	0	0	0	
+150303_1244	3	session	5	0	0	0	0	0	0	
+150303_1244	4	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	4	globals	1	2	0	21	21	3	3	3	2	2	0.5	0	0	
+150303_1244	4	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	4	subjects	1	1	1	0	0	1	3	0	1	2	0	1	0	1	81	541081.173	0	0	0	0	
+150303_1244	4	subjects	1	2	1	0	0	1	3	0	1	2	0	1	0	1	80	541081.173	0	0	0	0	
+150303_1244	4	subjects	1	3	1	0	0	1	3	0	1	2	0	1	0	2	74	541081.173	0	31.27364438839849	10.15801354401806	9	
+150303_1244	4	subjects	1	4	1	0	0	1	3	0	1	2	0	1	0	1	70	541081.173	0	0	0	0	
+150303_1244	4	subjects	1	5	1	0	0	1	3	0	1	2	0	1	0	2	71	541081.173	0	0	0	0	
+150303_1244	4	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	4	globals	2	2	0	21	21	3	3	3	2	2	0.5	0	0	
+150303_1244	4	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	4	subjects	2	1	1	0	0	1	3	0	1	2	0	1	0	1	-	541116.07	0	0	0	0	
+150303_1244	4	subjects	2	2	1	0	0	1	3	0	1	2	0	1	0	1	-	541116.07	0	24.84237074401009	8.126410835214447	2	
+150303_1244	4	subjects	2	3	1	0	0	1	3	0	1	2	0	1	0	2	-	541116.07	0	25.59899117276166	7.674943566591423	19	
+150303_1244	4	subjects	2	4	1	0	0	1	3	0	1	2	0	1	0	1	-	541116.07	0	0	0	0	
+150303_1244	4	subjects	2	5	1	0	0	1	3	0	1	2	0	1	0	2	-	541116.07	0	27.99495586380832	10.15801354401806	2	
+150303_1244	4	summary	Period	
+150303_1244	4	summary	1	
+150303_1244	4	summary	2	
+150303_1244	4	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	
+150303_1244	4	session	1	0	0	0	0	0	0	
+150303_1244	4	session	2	0	0	0	0	0	0	
+150303_1244	4	session	3	0	0	0	0	0	0	
+150303_1244	4	session	4	0	0	0	0	0	0	
+150303_1244	4	session	5	0	0	0	0	0	0	
+150303_1244	5	globals	Period	NumPeriods	RepeatTreatment	
+150303_1244	5	globals	1	1	0	
+150303_1244	5	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	question_number	confirmcount[1]	confirmcount[2]	confirmcount[3]	confirmcount[4]	confirmcount[5]	confirmcount[6]	confirmcount[7]	confirmcount[8]	confirmcount[9]	confirmcount[10]	confirmcount[11]	confirmcount[12]	confirmcount[13]	confirmcount[14]	confirmcount[15]	confirmcount[16]	confirmcount[17]	confirmcount[18]	confirmcount[19]	confirmcount[20]	confirmcount[21]	confirmcount[22]	confirmcount[23]	confirmcount[24]	confirmcount[25]	confirmcount[26]	confirmcount[27]	confirmcount[28]	confirmcount[29]	confirmcount[30]	confirmcount[31]	confirmcount[32]	confirmcount[33]	confirmcount[34]	confirmcount[35]	confirmcount[36]	confirmcount[37]	confirmcount[38]	confirmcount[39]	confirmcount[40]	stagecomplete[1]	stagecomplete[2]	stagecomplete[3]	stagecomplete[4]	stagecomplete[5]	stagecomplete[6]	stagecomplete[7]	stagecomplete[8]	stagecomplete[9]	stagecomplete[10]	stagecomplete[11]	stagecomplete[12]	stagecomplete[13]	stagecomplete[14]	stagecomplete[15]	stagecomplete[16]	stagecomplete[17]	stagecomplete[18]	stagecomplete[19]	stagecomplete[20]	stagecomplete[21]	stagecomplete[22]	stagecomplete[23]	stagecomplete[24]	stagecomplete[25]	stagecomplete[26]	stagecomplete[27]	stagecomplete[28]	stagecomplete[29]	stagecomplete[30]	stagecomplete[31]	stagecomplete[32]	stagecomplete[33]	stagecomplete[34]	stagecomplete[35]	stagecomplete[36]	stagecomplete[37]	stagecomplete[38]	stagecomplete[39]	stagecomplete[40]	confirm[1]	confirm[2]	confirm[3]	confirm[4]	confirm[5]	confirm[6]	confirm[7]	confirm[8]	confirm[9]	confirm[10]	confirm[11]	confirm[12]	confirm[13]	confirm[14]	confirm[15]	confirm[16]	confirm[17]	confirm[18]	confirm[19]	confirm[20]	confirm[21]	confirm[22]	confirm[23]	confirm[24]	confirm[25]	confirm[26]	confirm[27]	confirm[28]	confirm[29]	confirm[30]	confirm[31]	confirm[32]	confirm[33]	confirm[34]	confirm[35]	confirm[36]	confirm[37]	confirm[38]	confirm[39]	confirm[40]	imageview[1]	imageview[2]	imageview[3]	imageview[4]	imageview[5]	imageview[6]	imageview[7]	imageview[8]	imageview[9]	imageview[10]	imageview[11]	imageview[12]	imageview[13]	imageview[14]	imageview[15]	imageview[16]	imageview[17]	imageview[18]	imageview[19]	imageview[20]	question[1]	question[2]	question[3]	question[4]	question[5]	question[6]	question[7]	question[8]	question[9]	question[10]	question[11]	question[12]	question[13]	question[14]	question[15]	question[16]	question[17]	question[18]	question[19]	question[20]	question[21]	question[22]	question[23]	question[24]	question[25]	question[26]	question[27]	question[28]	question[29]	question[30]	question[31]	question[32]	question[33]	question[34]	question[35]	question[36]	question[37]	question[38]	question[39]	question[40]	question_correct[1]	question_correct[2]	question_correct[3]	question_correct[4]	question_correct[5]	question_correct[6]	question_correct[7]	question_correct[8]	question_correct[9]	question_correct[10]	question_correct[11]	question_correct[12]	question_correct[13]	question_correct[14]	question_correct[15]	question_correct[16]	question_correct[17]	question_correct[18]	question_correct[19]	question_correct[20]	question_correct[21]	question_correct[22]	question_correct[23]	question_correct[24]	question_correct[25]	question_correct[26]	question_correct[27]	question_correct[28]	question_correct[29]	question_correct[30]	question_correct[31]	question_correct[32]	question_correct[33]	question_correct[34]	question_correct[35]	question_correct[36]	question_correct[37]	question_correct[38]	question_correct[39]	question_correct[40]	TimeOKInstructionsOK	proceed	x	y	TimePlotInputInstructionsStage1OK	TimePlotInputStage1MaxPoolOK	TimePlotInputStage1MaxPointsOK	TimePlotInputStage1PointsKSHOK	TimePlotInputStage1OnTimeoutOK	
+150303_1244	5	subjects	1	1	1	0	0	1	4	4	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	4	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	88	1	14.76793248945148	-11.39240506329114	50	154	145	168	162	
+150303_1244	5	subjects	1	2	1	0	0	1	4	4	2	2	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	4	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	87	1	-67.08860759493672	11.39240506329115	51	120	105	109	160	
+150303_1244	5	subjects	1	3	1	0	0	1	4	4	1	2	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	4	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	85	1	-47.67932489451476	-26.58227848101265	52	151	94	162	146	
+150303_1244	5	subjects	1	4	1	0	0	1	4	4	1	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	4	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	86	1	-60.33755274261603	-56.96202531645569	52	156	162	82	160	
+150303_1244	5	subjects	1	5	1	0	0	1	4	4	1	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	4	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	84	1	-60.33755274261603	31.64556962025318	52	153	160	76	163	
+150303_1244	5	summary	Period	
+150303_1244	5	summary	1	
+150303_1244	5	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	
+150303_1244	5	session	1	0	0	0	0	0	0	
+150303_1244	5	session	2	0	0	0	0	0	0	
+150303_1244	5	session	3	0	0	0	0	0	0	
+150303_1244	5	session	4	0	0	0	0	0	0	
+150303_1244	5	session	5	0	0	0	0	0	0	
+150303_1244	6	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	6	globals	1	2	0	13	21	3	3	3	8	2	0.5	0	0	
+150303_1244	6	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	6	subjects	1	1	1	0	0	1	5	1	1	128	128	1	0	1	0.8681045774687568	1	197	541601.53	0.8059999999823049	33.66960907944515	8.126410835214447	22	
+150303_1244	6	subjects	1	2	0	0	0	1	5	1	1	64	0	1	0	2	0.960505901817468	0	191	541601.53	4.175999999977648	27.8688524590164	8.239277652370204	21	
+150303_1244	6	subjects	1	3	2	0	0	1	5	1	1	32	32	1	0	1	0.867293680490597	2	181	541601.53	8.341000000014901	27.23833543505675	10.94808126410835	17	
+150303_1244	6	subjects	1	4	3	0	0	1	5	1	1	64	64	1	0	1	0.2558815140537366	3	196	541601.53	3.59899999992922	16.51954602774275	10.8352144469526	21	
+150303_1244	6	subjects	1	5	4	0	0	1	5	1	1	128	128	1	0	1	0.001312466338888028	4	192	541601.53	1.741999999969266	26.10340479192938	7.787810383747178	22	
+150303_1244	6	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	6	globals	2	2	0	10	21	3	3	3	16	2	0.5	0	0	
+150303_1244	6	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	6	subjects	2	1	1	0	0	1	5	1	1	128	128	1	0	1	0.6673526930005069	-	-	541623.947	0.915999999968335	31.52585119798235	7.787810383747178	22	
+150303_1244	6	subjects	2	2	0	0	0	1	5	1	1	128	128	1	0	2	0.8570987162446132	-	-	541623.947	1.648999999975786	32.40857503152585	9.367945823927766	22	
+150303_1244	6	subjects	2	3	2	0	0	1	5	1	1	64	32	1	0	1	0.3968262418158475	-	-	541623.947	5.283999999985099	27.11223203026482	9.367945823927766	20	
+150303_1244	6	subjects	2	4	3	0	0	1	5	1	1	128	64	1	0	1	0.08928313669249562	-	-	541623.947	2.475999999907799	14.75409836065574	8.803611738148984	22	
+150303_1244	6	subjects	2	5	4	0	0	1	5	1	1	128	128	1	0	1	0.7469787349677546	-	-	541623.947	1.648999999975786	30.13871374527112	9.367945823927766	22	
+150303_1244	6	summary	Period	
+150303_1244	6	summary	1	
+150303_1244	6	summary	2	
+150303_1244	6	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	
+150303_1244	6	session	1	0	0	0	0	0	0	
+150303_1244	6	session	2	0	0	0	0	0	0	
+150303_1244	6	session	3	0	0	0	0	0	0	
+150303_1244	6	session	4	0	0	0	0	0	0	
+150303_1244	6	session	5	0	0	0	0	0	0	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	1	15	0	7	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	1	1	2	0	0	0	6	1	1	128	0	1	0	5	0.1261387528507685	2	197	541730.215	0.7129999999888241	30.8953341740227	7.562076749435666	22	
+150303_1244	7	subjects	1	2	1	0	0	0	6	1	1	128	0	1	0	7	0.4264534858178596	1	196	541730.215	1.680000000051223	35.30895334174023	10.8352144469526	22	
+150303_1244	7	subjects	1	3	4	0	0	0	6	1	1	128	0	1	0	8	0.009882149291169899	4	174	541730.215	2.210000000079162	24.59016393442623	11.17381489841987	22	
+150303_1244	7	subjects	1	4	3	0	0	0	6	1	1	128	128	1	0	1	0.01165267127177337	3	196	541730.215	2.476000000024214	15.76292559899117	10.60948081264108	22	
+150303_1244	7	subjects	1	5	0	0	0	0	6	1	1	128	0	1	0	13	0.6678919730092827	0	191	541730.215	1.180999999982305	28.37326607818411	9.029345372460497	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	2	15	0	7	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	2	1	2	0	0	0	6	1	1	128	0	1	0	5	0.6183729942973577	-	-	541746.7510000001	0.9309999999823049	30.76923076923077	7.562076749435666	22	
+150303_1244	7	subjects	2	2	1	0	0	0	6	1	1	128	0	1	0	7	0.3024171908862969	-	-	541746.7510000001	1.726999999955297	35.05674653215637	9.706546275395034	22	
+150303_1244	7	subjects	2	3	4	0	0	0	6	1	1	128	0	1	0	8	0.0586217576910843	-	-	541746.7510000001	2.912999999942258	22.06809583858764	9.706546275395034	21	
+150303_1244	7	subjects	2	4	3	0	0	0	6	1	1	128	128	1	0	1	0.4715986030509689	-	-	541746.7510000001	1.305999999982305	20.93316519546028	10.60948081264108	22	
+150303_1244	7	subjects	2	5	0	0	0	0	6	1	1	128	0	1	0	13	0.3378361190379766	-	-	541746.7510000001	1.024999999906868	24.71626733921816	10.49661399548533	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	3	15	0	8	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	3	1	2	0	0	0	6	1	1	128	0	1	0	5	0.2687137351691321	-	-	541763.74	0.3070000000298023	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	3	2	1	0	0	0	6	1	1	128	0	1	0	7	0.9949151556915209	-	-	541763.74	1.087000000057742	36.31778058007566	8.465011286681715	22	
+150303_1244	7	subjects	3	3	4	0	0	0	6	1	1	64	0	1	0	8	0.6200702938344657	-	-	541763.74	3.271000000066124	29.50819672131148	10.8352144469526	21	
+150303_1244	7	subjects	3	4	3	0	0	0	6	1	1	128	128	1	0	1	0.7596266198715319	-	-	541763.74	1.305000000051223	20.05044136191677	10.60948081264108	22	
+150303_1244	7	subjects	3	5	0	0	0	0	6	1	1	128	0	1	0	13	0.7010452005551408	-	-	541763.74	0.9000000000232831	24.08575031525851	10.27088036117381	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	4	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	4	1	2	0	0	0	6	1	1	128	0	1	0	5	0.5870683107464892	-	-	541781.0870000001	0.3849999998928979	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	4	2	1	0	0	0	6	1	1	128	0	1	0	7	0.353841568973773	-	-	541781.0870000001	1.476999999955297	36.69609079445145	8.916478555304741	22	
+150303_1244	7	subjects	4	3	4	0	0	0	6	1	1	128	0	1	0	8	0.5816783907737948	-	-	541781.0870000001	1.788999999989756	25.85119798234553	9.029345372460497	22	
+150303_1244	7	subjects	4	4	3	0	0	0	6	1	1	128	128	1	0	1	0.1663475689321512	-	-	541781.0870000001	0.8529999998863787	17.40226986128626	11.17381489841987	22	
+150303_1244	7	subjects	4	5	0	0	0	0	6	1	1	128	0	1	0	13	0.1967112595200125	-	-	541781.0870000001	1.024999999906868	25.22068095838588	10.49661399548533	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	5	15	0	7	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	5	1	2	0	0	0	6	1	1	128	128	1	0	5	0.4037361407669895	-	-	541796.9520000001	0.6509999999543652	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	5	2	1	0	0	0	6	1	1	128	0	1	0	7	0.9198504914156397	-	-	541796.9520000001	1.040999999968335	36.0655737704918	8.465011286681715	22	
+150303_1244	7	subjects	5	3	4	0	0	0	6	1	1	128	0	1	0	8	0.6048880054638199	-	-	541796.9520000001	2.085999999893829	30.51702395964691	10.15801354401806	22	
+150303_1244	7	subjects	5	4	3	0	0	0	6	1	1	128	128	1	0	1	0.7626424635586526	-	-	541796.9520000001	0.8850000000093132	18.53720050441362	10.15801354401806	22	
+150303_1244	7	subjects	5	5	0	0	0	0	6	1	1	128	0	1	0	13	0.7318850302751572	-	-	541796.9520000001	0.7749999999068677	26.6078184110971	9.706546275395034	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	6	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	6	1	2	0	0	0	6	1	1	128	128	1	0	5	0.6054051688897447	-	-	541813.1139999999	0.2920000000158325	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	6	2	1	0	0	0	6	1	1	128	0	1	0	7	0.3395859405117044	-	-	541813.1139999999	1.384000000078231	35.81336696090794	9.367945823927766	22	
+150303_1244	7	subjects	6	3	4	0	0	0	6	1	1	128	0	1	0	8	0.6904421214435446	-	-	541813.1139999999	1.274000000092201	25.85119798234553	9.706546275395034	22	
+150303_1244	7	subjects	6	4	3	0	0	0	6	1	1	128	128	1	0	1	0.7917038345670812	-	-	541813.1139999999	0.7750000000232831	18.0327868852459	10.60948081264108	22	
+150303_1244	7	subjects	6	5	0	0	0	0	6	1	1	128	0	1	0	13	0.781858811519043	-	-	541813.1139999999	0.7600000000093132	24.96847414880202	9.593679458239278	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	7	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	7	1	2	0	0	0	6	1	1	128	128	1	0	5	0.0413248543819994	-	-	541828.574	0.3539999999338761	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	7	2	1	0	0	0	6	1	1	128	128	1	0	7	0.5952393219784086	-	-	541828.574	1.616999999969266	35.56116015132409	8.803611738148984	22	
+150303_1244	7	subjects	7	3	4	0	0	0	6	1	1	128	0	1	0	8	0.1610907936287535	-	-	541828.574	1.538999999989756	27.74274905422447	9.932279909706546	22	
+150303_1244	7	subjects	7	4	3	0	0	0	6	1	1	128	128	1	0	1	0.8711277110833338	-	-	541828.574	0.7899999999208376	18.41109709962169	11.73814898419865	22	
+150303_1244	7	subjects	7	5	0	0	0	0	6	1	1	128	0	1	0	13	0.2044933569638493	-	-	541828.574	0.8369999999413267	27.23833543505675	10.49661399548533	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	8	15	0	7	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	8	1	2	0	0	0	6	1	1	128	128	1	0	5	0.04344017759125688	-	-	541844.252	0.4320000000298023	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	8	2	1	0	0	0	6	1	1	128	128	1	0	7	0.5314440212824587	-	-	541844.252	1.570999999996275	35.05674653215637	8.01354401805869	22	
+150303_1244	7	subjects	8	3	4	0	0	0	6	1	1	128	128	1	0	8	0.8450733026699504	-	-	541844.252	2.864999999990687	24.59016393442623	10.49661399548533	21	
+150303_1244	7	subjects	8	4	3	0	0	0	6	1	1	128	128	1	0	1	0.9293951433754504	-	-	541844.252	0.790999999968335	18.53720050441362	9.932279909706546	22	
+150303_1244	7	subjects	8	5	0	0	0	0	6	1	1	128	0	1	0	13	0.9816945074040883	-	-	541844.252	0.7590000000782311	28.62547288776797	10.72234762979684	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	9	15	0	7	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	9	1	2	0	0	0	6	1	1	128	128	1	0	5	0.1748534921439614	-	-	541861.193	0.3080000000772998	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	9	2	1	0	0	0	6	1	1	128	128	1	0	7	0.2413238171680476	-	-	541861.193	2.086000000010245	34.93064312736444	8.690744920993229	22	
+150303_1244	7	subjects	9	3	4	0	0	0	6	1	1	128	128	1	0	8	0.04467352994003963	-	-	541861.193	1.197000000043772	27.23833543505675	10.27088036117381	22	
+150303_1244	7	subjects	9	4	3	0	0	0	6	1	1	128	128	1	0	1	0.5443710370661556	-	-	541861.193	0.8070000000298023	22.69861286254729	10.8352144469526	22	
+150303_1244	7	subjects	9	5	0	0	0	0	6	1	1	128	0	1	0	13	0.2440199708771054	-	-	541861.193	0.7600000000093132	27.61664564943254	10.60948081264108	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	10	15	0	7	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	10	1	2	0	0	0	6	1	1	128	128	1	0	5	0.7788361710397695	-	-	541877.355	0.2920000000158325	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	10	2	1	0	0	0	6	1	1	128	128	1	0	7	0.4209021802157639	-	-	541877.355	2.320000000065193	34.67843631778058	8.239277652370204	21	
+150303_1244	7	subjects	10	3	4	0	0	0	6	1	1	128	128	1	0	8	0.889788058069436	-	-	541877.355	2.320000000065193	27.74274905422447	10.60948081264108	21	
+150303_1244	7	subjects	10	4	3	0	0	0	6	1	1	128	128	1	0	1	0.3527078304219562	-	-	541877.355	0.790999999968335	20.80706179066835	9.593679458239278	22	
+150303_1244	7	subjects	10	5	0	0	0	0	6	1	1	128	0	1	0	13	0.8035910426655742	-	-	541877.355	1.180999999982305	30.26481715006305	10.94808126410835	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	11	15	0	7	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	11	1	2	0	0	0	6	1	1	128	128	1	0	5	0.5468275982638949	-	-	541893.7510000001	0.2600000000093132	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	11	2	1	0	0	0	6	1	1	128	128	1	0	7	0.3446654800067961	-	-	541893.7510000001	1.757999999914318	34.80453972257251	7.900677200902934	22	
+150303_1244	7	subjects	11	3	4	0	0	0	6	1	1	128	128	1	0	8	0.5385118394803776	-	-	541893.7510000001	2.554000000003725	23.95964691046658	10.94808126410835	22	
+150303_1244	7	subjects	11	4	3	0	0	0	6	1	1	128	128	1	0	1	0.9466677098286653	-	-	541893.7510000001	0.8059999999823049	21.437578814628	12.07674943566591	22	
+150303_1244	7	subjects	11	5	0	0	0	0	6	1	1	128	0	1	0	13	0.600606701150819	-	-	541893.7510000001	0.8369999999413267	29.63430012610341	9.367945823927766	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	12	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	12	1	2	0	0	0	6	1	1	128	128	1	0	5	0.9796656942831659	-	-	541910.396	0.2449999999953434	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	12	2	1	0	0	0	6	1	1	128	128	1	0	7	0.5571928809197586	-	-	541910.396	1.977000000071712	37.07440100882724	8.690744920993229	22	
+150303_1244	7	subjects	12	3	4	0	0	0	6	1	1	128	128	1	0	8	0.05411199063719809	-	-	541910.396	1.867000000085682	26.6078184110971	10.72234762979684	22	
+150303_1244	7	subjects	12	4	3	0	0	0	6	1	1	128	128	1	0	1	0.8995266654060812	-	-	541910.396	0.7750000000232831	22.44640605296343	10.60948081264108	22	
+150303_1244	7	subjects	12	5	0	0	0	0	6	1	1	128	0	1	0	13	0.6642195818313489	-	-	541910.396	0.9470000000437722	28.37326607818411	9.029345372460497	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	13	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	13	1	2	0	0	0	6	1	1	128	128	1	0	5	0.3808984129600685	-	-	541926.449	0.3850000000093132	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	13	2	1	0	0	0	6	1	1	128	128	1	0	7	0.09906477625438234	-	-	541926.449	1.883000000030734	33.66960907944515	9.480812641083521	22	
+150303_1244	7	subjects	13	3	4	0	0	0	6	1	1	128	128	1	0	8	0.7032038423713315	-	-	541926.449	2.069999999948777	25.22068095838588	10.72234762979684	22	
+150303_1244	7	subjects	13	4	3	0	0	0	6	1	1	128	128	1	0	1	0.04188976764766954	-	-	541926.449	0.7750000000232831	22.06809583858764	10.38374717832957	22	
+150303_1244	7	subjects	13	5	0	0	0	0	6	1	1	128	128	1	0	13	0.7080947205927665	-	-	541926.449	0.9149999999208376	31.90416141235814	8.916478555304741	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	14	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	14	1	2	0	0	0	6	1	1	128	128	1	0	5	0.1160389367100033	-	-	541942.595	0.3229999999748543	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	14	2	1	0	0	0	6	1	1	128	128	1	0	7	0.3111272707167674	-	-	541942.595	1.913999999989756	32.40857503152585	10.15801354401806	22	
+150303_1244	7	subjects	14	3	4	0	0	0	6	1	1	128	128	1	0	8	0.04460018083667391	-	-	541942.595	1.961000000010245	28.12105926860025	10.94808126410835	22	
+150303_1244	7	subjects	14	4	3	0	0	0	6	1	1	128	128	1	0	1	0.2664092850249304	-	-	541942.595	0.9309999999823049	23.83354350567466	10.27088036117381	22	
+150303_1244	7	subjects	14	5	0	0	0	0	6	1	1	128	128	1	0	13	0.2607351016536053	-	-	541942.595	1.148999999975786	31.52585119798235	9.706546275395034	22	
+150303_1244	7	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	7	globals	15	15	0	14	21	3	3	3	8	2	0.5	0	0	
+150303_1244	7	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	TimePlotSelectAuctionOK	
+150303_1244	7	subjects	15	1	2	0	0	1	6	1	1	128	128	1	0	5	0.03193813191351394	-	-	541958.632	0.3690000000642613	30.26481715006305	8.126410835214447	22	
+150303_1244	7	subjects	15	2	1	0	0	1	6	1	1	128	128	1	0	7	0.7176195595961156	-	-	541958.632	1.648999999975786	31.14754098360656	11.06094808126411	22	
+150303_1244	7	subjects	15	3	4	0	0	1	6	1	1	128	128	1	0	8	0.540853414005066	-	-	541958.632	2.256999999983236	25.34678436317781	10.49661399548533	22	
+150303_1244	7	subjects	15	4	3	0	0	1	6	1	1	128	128	1	0	1	0.9998636338859162	-	-	541958.632	0.8690000000642613	22.44640605296343	10.60948081264108	22	
+150303_1244	7	subjects	15	5	0	0	0	1	6	1	1	128	128	1	0	13	0.5576247910771635	-	-	541958.632	0.853000000002794	29.25598991172762	10.60948081264108	22	
+150303_1244	7	summary	Period	
+150303_1244	7	summary	1	
+150303_1244	7	summary	2	
+150303_1244	7	summary	3	
+150303_1244	7	summary	4	
+150303_1244	7	summary	5	
+150303_1244	7	summary	6	
+150303_1244	7	summary	7	
+150303_1244	7	summary	8	
+150303_1244	7	summary	9	
+150303_1244	7	summary	10	
+150303_1244	7	summary	11	
+150303_1244	7	summary	12	
+150303_1244	7	summary	13	
+150303_1244	7	summary	14	
+150303_1244	7	summary	15	
+150303_1244	7	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	
+150303_1244	7	session	1	0	0	0	0	0	0	128	
+150303_1244	7	session	2	0	0	0	0	0	0	128	
+150303_1244	7	session	3	0	0	0	0	0	0	128	
+150303_1244	7	session	4	0	0	0	0	0	0	128	
+150303_1244	7	session	5	0	0	0	0	0	0	128	
+150303_1244	8	globals	Period	NumPeriods	RepeatTreatment	
+150303_1244	8	globals	1	1	0	
+150303_1244	8	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	response[1]	response[2]	response[3]	response[4]	response[5]	RT[1]	RT[2]	RT[3]	RT[4]	RT[5]	counter	control	StartTime	PointerPosition	Responded	numberL	digit1L	digit2L	digit3L	digit4L	numdigitsL	numberR	digit1R	digit2R	digit3R	digit4R	numdigitsR	TestMouseX	TestMouseY	InvestmentFactor	TimePlotInputQuestion1frustratedOK	TimePlotInputQuestion2upsetOK	TimePlotInputQuestion3hostileOK	TimePlotInputQuestion4irritableOK	TimePlotInputQuestion5stressedOK	
+150303_1244	8	subjects	1	1	1	0	0	1	7	20	30	10	21	60	29.67099999997299	11.07600000000093	10.7170000000624	12.60399999993388	12.80799999996088	5	0	542115.782	70.33898305084745	1	40	0	0	0	0	2	60	0	6	99	99	2	53.55	68.47499999999999	1	32	51	51	49	49	
+150303_1244	8	subjects	1	2	1	0	0	1	7	49	47	41	51	51	36.76899999997113	17.20700000005309	11.24800000002142	15.28799999994226	11.37300000002142	5	0	542115.782	51.69491525423729	1	49	0	0	0	0	2	51	1	5	99	99	2	32.025	59.025	1	25	44	50	46	50	
+150303_1244	8	subjects	1	3	1	0	0	1	7	0	0	0	0	0	27.97100000001956	5.819000000017695	8.097000000067055	6.535999999963678	4.461999999941327	5	0	542115.782	-54.51977401129945	1	100	0	0	0	0	3	0	0	99	99	99	1	29.4	45.9	1	34	56	53	55	57	
+150303_1244	8	subjects	1	4	1	0	0	1	7	7	0	0	0	0	28.06499999994412	7.893999999971129	8.752000000094995	11.09099999989849	10.43700000003446	5	0	542115.782	-59.60451977401131	1	100	0	0	0	0	3	0	0	99	99	99	1	25.725	74.25	1	33	54	53	51	51	
+150303_1244	8	subjects	1	5	1	0	0	1	7	60	60	75	70	80	26.0679999999702	21.69999999995343	14.18100000009872	9.282000000006519	14.66399999998976	5	0	542115.782	112.4293785310734	1	20	0	0	0	0	2	80	0	8	99	99	2	20.475	38.55	1	35	40	48	52	47	
+150303_1244	8	summary	Period	
+150303_1244	8	summary	1	
+150303_1244	8	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	
+150303_1244	8	session	1	0	0	0	0	0	0	128	
+150303_1244	8	session	2	0	0	0	0	0	0	128	
+150303_1244	8	session	3	0	0	0	0	0	0	128	
+150303_1244	8	session	4	0	0	0	0	0	0	128	
+150303_1244	8	session	5	0	0	0	0	0	0	128	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	1	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	1	1	2	0	0	0	8	1	1	128	0	1	0	3	0.7684861467073142	2	149	542232.8810000001	0.915999999968335	24.4640605296343	7.562076749435666	0	22	
+150303_1244	9	subjects	1	2	4	0	0	0	8	1	1	128	0	1	0	11	0.2866242403567881	4	148	542232.8810000001	1.789999999920838	35.43505674653216	10.72234762979684	0	22	
+150303_1244	9	subjects	1	3	1	0	0	0	8	1	1	128	0	1	0	11	0.7935811042755754	1	147	542232.8810000001	1.478000000002794	24.33795712484237	10.60948081264108	0	22	
+150303_1244	9	subjects	1	4	3	0	0	0	8	1	1	128	0	1	0	5	0.633530993309585	3	145	542232.8810000001	0.7759999999543652	18.28499369482976	8.916478555304741	0	22	
+150303_1244	9	subjects	1	5	0	0	0	0	8	1	1	128	0	1	0	12	0.8934544114831157	0	146	542232.8810000001	0.790999999968335	29.38209331651955	8.916478555304741	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	2	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	2	1	2	0	0	0	8	1	1	128	0	1	0	3	0.9479690026249592	-	-	542248.747	0.5879999999888241	24.96847414880202	8.577878103837472	0	22	
+150303_1244	9	subjects	2	2	4	0	0	0	8	1	1	128	0	1	0	11	0.4602266393882347	-	-	542248.747	1.087000000057742	37.07440100882724	10.0451467268623	0	22	
+150303_1244	9	subjects	2	3	1	0	0	0	8	1	1	128	0	1	0	11	0.5390217073909108	-	-	542248.747	1.555000000051223	23.45523329129887	12.52821670428894	0	22	
+150303_1244	9	subjects	2	4	3	0	0	0	8	1	1	128	0	1	0	5	0.6323571827413315	-	-	542248.747	0.853000000002794	15.13240857503153	10.15801354401806	0	22	
+150303_1244	9	subjects	2	5	0	0	0	0	8	1	1	128	0	1	0	12	0.006716086532322731	-	-	542248.747	0.8690000000642613	30.76923076923077	9.480812641083521	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	3	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	3	1	2	0	0	0	8	1	1	128	0	1	0	3	0.2603903670145154	-	-	542264.4399999999	0.2610000000568107	24.96847414880202	8.577878103837472	128	22	
+150303_1244	9	subjects	3	2	4	0	0	0	8	1	1	128	0	1	0	11	0.06905655566093352	-	-	542264.4399999999	1.758000000030734	33.79571248423707	10.72234762979684	0	22	
+150303_1244	9	subjects	3	3	1	0	0	0	8	1	1	128	0	1	0	11	0.9272092226553751	-	-	542264.4399999999	1.212000000057742	22.06809583858764	10.0451467268623	0	22	
+150303_1244	9	subjects	3	4	3	0	0	0	8	1	1	128	0	1	0	5	0.03448308400552864	-	-	542264.4399999999	0.7440000000642613	11.47540983606557	8.690744920993229	0	22	
+150303_1244	9	subjects	3	5	0	0	0	0	8	1	1	128	0	1	0	12	0.7648646960802678	-	-	542264.4399999999	0.7290000000502914	31.14754098360656	8.916478555304741	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	4	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	4	1	2	0	0	0	8	1	1	128	0	1	0	3	0.7554045541935621	-	-	542280.275	0.2759999999543652	24.96847414880202	8.577878103837472	128	22	
+150303_1244	9	subjects	4	2	4	0	0	0	8	1	1	128	0	1	0	11	0.04398391118458654	-	-	542280.275	1.508000000030734	30.64312736443884	10.8352144469526	0	22	
+150303_1244	9	subjects	4	3	1	0	0	0	8	1	1	128	0	1	0	11	0.1445852313863976	-	-	542280.275	1.243000000016764	23.32912988650694	11.73814898419865	0	22	
+150303_1244	9	subjects	4	4	3	0	0	0	8	1	1	128	0	1	0	5	0.219009328735531	-	-	542280.275	0.7589999999618158	14.75409836065574	11.39954853273138	0	22	
+150303_1244	9	subjects	4	5	0	0	0	0	8	1	1	128	0	1	0	12	0.7927224742214766	-	-	542280.275	0.7589999999618158	32.28247162673392	9.593679458239278	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	5	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	5	1	2	0	0	0	8	1	1	128	0	1	0	3	0.541560463859495	-	-	542295.843	0.3540000000502914	24.96847414880202	8.577878103837472	128	22	
+150303_1244	9	subjects	5	2	4	0	0	0	8	1	1	128	0	1	0	11	0.836590485105566	-	-	542295.843	1.587000000057742	32.78688524590164	9.819413092550789	0	22	
+150303_1244	9	subjects	5	3	1	0	0	0	8	1	1	128	0	1	0	11	0.8464460646949923	-	-	542295.843	1.087999999988824	26.6078184110971	10.72234762979684	0	22	
+150303_1244	9	subjects	5	4	3	0	0	0	8	1	1	128	0	1	0	5	0.2436505315097284	-	-	542295.843	0.7759999999543652	11.85372005044136	9.706546275395034	128	22	
+150303_1244	9	subjects	5	5	0	0	0	0	8	1	1	128	0	1	0	12	0.3752937830869545	-	-	542295.843	0.7600000000093132	29.38209331651955	9.480812641083521	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	6	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	6	1	2	0	0	0	8	1	1	128	0	1	0	3	0.06076700941695227	-	-	542311.5060000001	0.8689999999478459	24.96847414880202	8.690744920993229	128	22	
+150303_1244	9	subjects	6	2	4	0	0	0	8	1	1	128	0	1	0	11	0.263859968755329	-	-	542311.5060000001	1.585999999893829	28.24716267339218	10.38374717832957	0	22	
+150303_1244	9	subjects	6	3	1	0	0	0	8	1	1	128	0	1	0	11	0.7276520420460273	-	-	542311.5060000001	1.164999999920838	19.41992433795713	12.30248306997743	0	22	
+150303_1244	9	subjects	6	4	3	0	0	0	8	1	1	128	0	1	0	5	0.1031159074525889	-	-	542311.5060000001	0.790999999968335	13.36696090794452	9.593679458239278	128	22	
+150303_1244	9	subjects	6	5	0	0	0	0	8	1	1	128	0	1	0	12	0.7239992347192016	-	-	542311.5060000001	0.7599999998928979	29.50819672131148	10.0451467268623	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	7	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	7	1	2	0	0	0	8	1	1	128	0	1	0	3	0.4064000357903541	-	-	542327.168	0.2610000000568107	24.96847414880202	8.690744920993229	128	22	
+150303_1244	9	subjects	7	2	4	0	0	0	8	1	1	128	0	1	0	11	0.2936076765384561	-	-	542327.168	1.680000000051223	28.24716267339218	10.15801354401806	0	22	
+150303_1244	9	subjects	7	3	1	0	0	0	8	1	1	128	0	1	0	11	0.08434233119913485	-	-	542327.168	1.415000000037253	26.86002522068096	11.28668171557562	0	22	
+150303_1244	9	subjects	7	4	3	0	0	0	8	1	1	128	0	1	0	5	0.647870667580455	-	-	542327.168	0.8070000000298023	14.24968474148802	8.577878103837472	128	22	
+150303_1244	9	subjects	7	5	0	0	0	0	8	1	1	128	0	1	0	12	0.5762831692473419	-	-	542327.168	0.8220000000437722	30.64312736443884	9.593679458239278	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	8	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	8	1	2	0	0	0	8	1	1	128	0	1	0	3	0.9546540803064844	-	-	542342.9250000001	0.853000000002794	25.34678436317781	10.0451467268623	128	22	
+150303_1244	9	subjects	8	2	4	0	0	0	8	1	1	128	0	1	0	11	0.2155234097575412	-	-	542342.9250000001	1.148999999975786	28.12105926860025	10.27088036117381	0	22	
+150303_1244	9	subjects	8	3	1	0	0	0	8	1	1	128	0	1	0	11	0.3441747111939708	-	-	542342.9250000001	1.179999999934807	22.69861286254729	10.15801354401806	0	22	
+150303_1244	9	subjects	8	4	3	0	0	0	8	1	1	128	0	1	0	5	0.6441990903784517	-	-	542342.9250000001	0.978000000002794	11.97982345523329	9.593679458239278	128	22	
+150303_1244	9	subjects	8	5	0	0	0	0	8	1	1	128	0	1	0	12	0.7698278938279617	-	-	542342.9250000001	0.7749999999068677	31.27364438839849	10.49661399548533	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	9	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	9	1	2	0	0	0	8	1	1	128	0	1	0	3	0.2375952793460317	-	-	542358.181	0.3860000000568107	25.09457755359395	9.932279909706546	128	22	
+150303_1244	9	subjects	9	2	4	0	0	0	8	1	1	128	0	1	0	11	0.6032676271178143	-	-	542358.181	1.930000000051223	27.49054224464061	10.49661399548533	0	22	
+150303_1244	9	subjects	9	3	1	0	0	0	8	1	1	128	0	1	0	11	0.02912819805980111	-	-	542358.181	1.383999999961816	26.10340479192938	11.17381489841987	0	22	
+150303_1244	9	subjects	9	4	3	0	0	0	8	1	1	128	0	1	0	5	0.5912255400750905	-	-	542358.181	0.7760000000707805	12.73644388398487	9.255079006772009	128	22	
+150303_1244	9	subjects	9	5	0	0	0	0	8	1	1	128	0	1	0	12	0.4974115665524321	-	-	542358.181	0.9320000000298023	26.10340479192938	8.352144469525959	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	10	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	10	1	2	0	0	0	8	1	1	128	0	1	0	3	0.02717033355830718	-	-	542374.187	0.4949999999953434	25.09457755359395	9.932279909706546	128	22	
+150303_1244	9	subjects	10	2	4	0	0	0	8	1	1	128	0	1	0	11	0.02581850021417183	-	-	542374.187	1.554999999934807	27.11223203026482	11.06094808126411	0	22	
+150303_1244	9	subjects	10	3	1	0	0	0	8	1	1	128	0	1	0	11	0.2572764336398227	-	-	542374.187	1.383999999961816	32.78688524590164	10.0451467268623	0	22	
+150303_1244	9	subjects	10	4	3	0	0	0	8	1	1	128	0	1	0	5	0.1812581900419938	-	-	542374.187	0.806999999913387	14.24968474148802	9.255079006772009	128	22	
+150303_1244	9	subjects	10	5	0	0	0	0	8	1	1	128	0	1	0	12	0.6517961144688521	-	-	542374.187	0.806999999913387	28.87767969735183	8.916478555304741	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	11	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	11	1	2	0	0	0	8	1	1	128	0	1	0	3	0.8916628742086062	-	-	542389.818	0.3860000000568107	25.09457755359395	9.932279909706546	128	22	
+150303_1244	9	subjects	11	2	4	0	0	0	8	1	1	128	0	1	0	11	0.8772663487481263	-	-	542389.818	1.540000000037253	27.23833543505675	10.8352144469526	128	22	
+150303_1244	9	subjects	11	3	1	0	0	0	8	1	1	128	0	1	0	11	0.2058735886616044	-	-	542389.818	1.087999999988824	26.48171500630517	10.60948081264108	128	22	
+150303_1244	9	subjects	11	4	3	0	0	0	8	1	1	128	0	1	0	5	0.1173783154773425	-	-	542389.818	0.7600000000093132	16.51954602774275	9.932279909706546	128	22	
+150303_1244	9	subjects	11	5	0	0	0	0	8	1	1	128	0	1	0	12	0.365401528480184	-	-	542389.818	0.7910000000847504	31.02143757881463	9.593679458239278	0	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	12	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	12	1	2	0	0	0	8	1	1	128	0	1	0	3	0.7773482276952585	-	-	542405.434	0.3070000000298023	25.09457755359395	9.932279909706546	128	22	
+150303_1244	9	subjects	12	2	4	0	0	0	8	1	1	128	0	1	0	11	0.1779268240453335	-	-	542405.434	1.836000000010245	27.61664564943254	10.38374717832957	128	22	
+150303_1244	9	subjects	12	3	1	0	0	0	8	1	1	128	0	1	0	11	0.8268380080474718	-	-	542405.434	1.275000000023283	22.3203026481715	7.900677200902934	128	22	
+150303_1244	9	subjects	12	4	3	0	0	0	8	1	1	128	0	1	0	5	0.5224929091159687	-	-	542405.434	0.8070000000298023	12.61034047919294	10.49661399548533	128	22	
+150303_1244	9	subjects	12	5	0	0	0	0	8	1	1	128	0	1	0	12	0.5556272061335049	-	-	542405.434	1.570999999996275	25.85119798234553	8.690744920993229	128	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	13	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	13	1	2	0	0	0	8	1	1	128	0	1	0	3	0.8256394652769153	-	-	542421.362	0.3379999999888241	25.09457755359395	9.932279909706546	128	22	
+150303_1244	9	subjects	13	2	4	0	0	0	8	1	1	128	0	1	0	11	0.036948136536846	-	-	542421.362	1.617000000085682	27.36443883984868	9.932279909706546	128	22	
+150303_1244	9	subjects	13	3	1	0	0	0	8	1	1	128	0	1	0	11	0.1837437530903815	-	-	542421.362	1.320999999996275	24.84237074401009	9.819413092550789	128	22	
+150303_1244	9	subjects	13	4	3	0	0	0	8	1	1	128	0	1	0	5	0.9957777680809506	-	-	542421.362	0.7129999999888241	16.26733921815889	8.239277652370204	128	22	
+150303_1244	9	subjects	13	5	0	0	0	0	8	1	1	128	0	1	0	12	0.9297692840591861	-	-	542421.362	0.7750000000232831	28.37326607818411	10.60948081264108	128	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	14	15	0	6	21	3	3	3	32	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	14	1	2	0	0	0	8	1	1	128	0	1	0	3	0.7623100247058599	-	-	542437.071	0.3540000000502914	24.08575031525851	6.094808126410835	128	22	
+150303_1244	9	subjects	14	2	4	0	0	0	8	1	1	128	0	1	0	11	0.2388883071201333	-	-	542437.071	1.601999999955297	27.74274905422447	10.49661399548533	128	22	
+150303_1244	9	subjects	14	3	1	0	0	0	8	1	1	128	0	1	0	11	0.4161317299195247	-	-	542437.071	1.275000000023283	18.41109709962169	10.38374717832957	128	22	
+150303_1244	9	subjects	14	4	3	0	0	0	8	1	1	128	0	1	0	5	0.7424205796524979	-	-	542437.071	0.7129999999888241	13.11475409836066	11.17381489841987	128	22	
+150303_1244	9	subjects	14	5	0	0	0	0	8	1	1	128	0	1	0	12	0.3034891664532429	-	-	542437.071	0.7750000000232831	26.10340479192938	9.029345372460497	128	22	
+150303_1244	9	globals	Period	NumPeriods	RepeatTreatment	seconds	duration	reptime	delay	countdown	Resource	MinResource	multiplier	AuctionStop	AuctionNoStop	
+150303_1244	9	globals	15	15	0	13	21	3	3	3	8	2	0.5	0	0	
+150303_1244	9	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	winner	end	RoundProfit	PayAmt1	GroupSize	LeaveStage	PayPeriod	randGroup	ranking	TimeOKInfoStageOK	Starttime	RT	x	y	PayAmt2	TimePlotSelectAuctionOK	
+150303_1244	9	subjects	15	1	2	0	0	1	8	1	1	128	0	1	0	3	0.8626822195307734	-	-	542452.765	0.790999999968335	29.12988650693569	8.01354401805869	128	22	
+150303_1244	9	subjects	15	2	4	0	0	1	8	1	1	128	0	1	0	11	0.538323512085864	-	-	542452.765	1.461000000010245	27.49054224464061	10.38374717832957	128	22	
+150303_1244	9	subjects	15	3	1	0	0	1	8	1	1	128	0	1	0	11	0.06833157179333808	-	-	542452.765	1.211999999941327	27.49054224464061	10.49661399548533	128	22	
+150303_1244	9	subjects	15	4	3	0	0	1	8	1	1	128	0	1	0	5	0.1000636537093966	-	-	542452.765	0.6970000000437722	14.12358133669609	11.06094808126411	128	22	
+150303_1244	9	subjects	15	5	0	0	0	1	8	1	1	128	0	1	0	12	0.6705243022509498	-	-	542452.765	0.8059999999823049	25.47288776796974	7.562076749435666	128	22	
+150303_1244	9	summary	Period	
+150303_1244	9	summary	1	
+150303_1244	9	summary	2	
+150303_1244	9	summary	3	
+150303_1244	9	summary	4	
+150303_1244	9	summary	5	
+150303_1244	9	summary	6	
+150303_1244	9	summary	7	
+150303_1244	9	summary	8	
+150303_1244	9	summary	9	
+150303_1244	9	summary	10	
+150303_1244	9	summary	11	
+150303_1244	9	summary	12	
+150303_1244	9	summary	13	
+150303_1244	9	summary	14	
+150303_1244	9	summary	15	
+150303_1244	9	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	PayAmt2	
+150303_1244	9	session	1	0	0	0	0	0	0	128	128	
+150303_1244	9	session	2	0	0	0	0	0	0	128	128	
+150303_1244	9	session	3	0	0	0	0	0	0	128	128	
+150303_1244	9	session	4	0	0	0	0	0	0	128	128	
+150303_1244	9	session	5	0	0	0	0	0	0	128	128	
+150303_1244	10	globals	Period	NumPeriods	RepeatTreatment	
+150303_1244	10	globals	1	1	0	
+150303_1244	10	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	response[1]	response[2]	response[3]	response[4]	response[5]	response[6]	response[7]	response[8]	response[9]	response[10]	response[11]	response[12]	RT[1]	RT[2]	RT[3]	RT[4]	RT[5]	RT[6]	RT[7]	RT[8]	RT[9]	RT[10]	RT[11]	RT[12]	counter	control	StartTime	PointerPosition	Responded	numberL	digit1L	digit2L	digit3L	digit4L	numdigitsL	numberR	digit1R	digit2R	digit3R	digit4R	numdigitsR	TestMouseX	TestMouseY	InvestmentFactor	TimePlotInputQuestion1distressedOK	TimePlotInputQuestion2upsetOK	TimePlotInputQuestion3guiltyOK	TimePlotInputQuestion4ashamedOK	TimePlotInputQuestion5hostileOK	TimePlotInputQuestion6irritableOK	TimePlotInputQuestion7nervousOK	TimePlotInputQuestion8jitteryOK	TimePlotInputQuestion9scaredOK	TimePlotInputQuestion10afraidOK	TimePlotInputQuestion11frustratedOK	TimePlotInputQuestion12stressedOK	
+150303_1244	10	subjects	1	1	1	0	0	1	9	50	30	11	14	10	20	30	20	13	15	20	60	17.45699999993667	8.049999999930151	9.126000000047498	11.60599999991246	10.21799999999348	7.643999999971129	10.96699999994598	8.408000000054017	9.157999999937601	8.814000000013039	9.016999999992549	6.349999999976717	12	0	542694.4520000001	71.4689265536723	1	40	0	0	0	0	2	60	0	6	99	99	2	18.9	32.775	1	44	54	53	50	51	54	51	53	52	53	53	55	
+150303_1244	10	subjects	1	2	1	0	0	1	9	52	42	55	40	48	46	53	45	51	40	52	45	18.96999999997206	10.90500000002794	17.14500000001863	11.35699999995995	12.16799999994692	14.44499999994878	12.43299999996088	15.13199999998324	13.3070000000298	10.71699999994598	12.44899999990594	11.45100000000093	12	0	542694.4520000001	39.54802259887006	1	55	0	0	0	0	2	45	5	4	99	99	2	24.15	59.025	1	43	51	45	50	49	47	49	46	48	51	49	50	
+150303_1244	10	subjects	1	3	1	0	0	1	9	0	0	0	0	0	0	0	0	0	0	0	0	18.48599999991711	6.567999999970198	5.241999999969266	5.677999999956228	6.08399999991525	10.43599999998696	5.989999999990687	4.758000000030734	11.69999999995343	5.56899999990128	8.049999999930151	4.898999999975786	12	0	542694.4520000001	-60.16949152542374	1	100	0	0	0	0	3	0	0	99	99	99	1	19.425	46.95	1	43	55	56	56	56	51	56	57	50	56	54	57	
+150303_1244	10	subjects	1	4	1	0	0	1	9	0	0	0	0	0	0	25	0	0	0	0	0	16.53599999996368	7.831000000005588	8.175000000046566	8.454999999958091	10.90399999998044	14.3519999999553	12.29299999994692	14.1019999999553	9.952999999979511	5.834999999962747	5.615999999921769	8.314999999944121	12	0	542694.4520000001	-58.75706214689267	1	100	0	0	0	0	3	0	0	99	99	99	1	35.7	70.575	1	45	54	53	53	51	47	49	47	52	56	56	53	
+150303_1244	10	subjects	1	5	1	0	0	1	9	60	50	30	30	65	100	50	70	40	60	80	60	15.58499999996275	21.37199999997392	20.53000000002794	17.23800000001211	22.01199999998789	17.83100000000559	11.30999999993946	21.0910000000149	10.60800000000745	17.23800000001211	19.96799999999348	15.97499999997672	12	0	542694.4520000001	70.33898305084745	1	40	0	0	0	0	2	60	0	6	99	99	2	24.15	43.8	1	46	40	41	44	40	44	50	40	51	44	42	46	
+150303_1244	10	summary	Period	
+150303_1244	10	summary	1	
+150303_1244	10	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	PayAmt2	
+150303_1244	10	session	1	0	0	0	0	0	0	128	128	
+150303_1244	10	session	2	0	0	0	0	0	0	128	128	
+150303_1244	10	session	3	0	0	0	0	0	0	128	128	
+150303_1244	10	session	4	0	0	0	0	0	0	128	128	
+150303_1244	10	session	5	0	0	0	0	0	0	128	128	
+150303_1244	11	globals	Period	NumPeriods	RepeatTreatment	randomglobal	
+150303_1244	11	globals	1	1	0	0.2790200329753664	
+150303_1244	11	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	PayTrial	AllTrialCounter	control	TimeOKInfoStage0m1mOK	ssamt	llamt	ssdel	lldel	upperbound	lowerbound	StartTime	Response0m3m[1]	Response0m3m[2]	Response0m3m[3]	Response0m3m[4]	Response0m3m[5]	Response0m3m[6]	RT0m3m[1]	RT0m3m[2]	RT0m3m[3]	RT0m3m[4]	RT0m3m[5]	RT0m3m[6]	ChosenAmt0m3m[1]	ChosenAmt0m3m[2]	ChosenAmt0m3m[3]	ChosenAmt0m3m[4]	ChosenAmt0m3m[5]	ChosenAmt0m3m[6]	ChosenDel0m3m[1]	ChosenDel0m3m[2]	ChosenDel0m3m[3]	ChosenDel0m3m[4]	ChosenDel0m3m[5]	ChosenDel0m3m[6]	IgnoredAmt0m3m[1]	IgnoredAmt0m3m[2]	IgnoredAmt0m3m[3]	IgnoredAmt0m3m[4]	IgnoredAmt0m3m[5]	IgnoredAmt0m3m[6]	IgnoredDel0m3m[1]	IgnoredDel0m3m[2]	IgnoredDel0m3m[3]	IgnoredDel0m3m[4]	IgnoredDel0m3m[5]	IgnoredDel0m3m[6]	SSAmt0m3m[1]	SSAmt0m3m[2]	SSAmt0m3m[3]	SSAmt0m3m[4]	SSAmt0m3m[5]	SSAmt0m3m[6]	SSDel0m3m[1]	SSDel0m3m[2]	SSDel0m3m[3]	SSDel0m3m[4]	SSDel0m3m[5]	SSDel0m3m[6]	LLAmt0m3m[1]	LLAmt0m3m[2]	LLAmt0m3m[3]	LLAmt0m3m[4]	LLAmt0m3m[5]	LLAmt0m3m[6]	LLDel0m3m[1]	LLDel0m3m[2]	LLDel0m3m[3]	LLDel0m3m[4]	LLDel0m3m[5]	LLDel0m3m[6]	ChoseLL[1]	ChoseLL[2]	ChoseLL[3]	ChoseLL[4]	ChoseLL[5]	ChoseLL[6]	ChoseSS[1]	ChoseSS[2]	ChoseSS[3]	ChoseSS[4]	ChoseSS[5]	ChoseSS[6]	counter	x	y	PayAmt	PayDel	IndiffAmt	LLAmt	LLDel	SSDel	TimeOKInfoStage0m2mOK	Response0m6m[1]	Response0m6m[2]	Response0m6m[3]	Response0m6m[4]	Response0m6m[5]	Response0m6m[6]	RT0m6m[1]	RT0m6m[2]	RT0m6m[3]	RT0m6m[4]	RT0m6m[5]	RT0m6m[6]	ChosenAmt0m6m[1]	ChosenAmt0m6m[2]	ChosenAmt0m6m[3]	ChosenAmt0m6m[4]	ChosenAmt0m6m[5]	ChosenAmt0m6m[6]	ChosenDel0m6m[1]	ChosenDel0m6m[2]	ChosenDel0m6m[3]	ChosenDel0m6m[4]	ChosenDel0m6m[5]	ChosenDel0m6m[6]	IgnoredAmt0m6m[1]	IgnoredAmt0m6m[2]	IgnoredAmt0m6m[3]	IgnoredAmt0m6m[4]	IgnoredAmt0m6m[5]	IgnoredAmt0m6m[6]	IgnoredDel0m6m[1]	IgnoredDel0m6m[2]	IgnoredDel0m6m[3]	IgnoredDel0m6m[4]	IgnoredDel0m6m[5]	IgnoredDel0m6m[6]	SSAmt0m6m[1]	SSAmt0m6m[2]	SSAmt0m6m[3]	SSAmt0m6m[4]	SSAmt0m6m[5]	SSAmt0m6m[6]	SSDel0m6m[1]	SSDel0m6m[2]	SSDel0m6m[3]	SSDel0m6m[4]	SSDel0m6m[5]	SSDel0m6m[6]	LLAmt0m6m[1]	LLAmt0m6m[2]	LLAmt0m6m[3]	LLAmt0m6m[4]	LLAmt0m6m[5]	LLAmt0m6m[6]	LLDel0m6m[1]	LLDel0m6m[2]	LLDel0m6m[3]	LLDel0m6m[4]	LLDel0m6m[5]	LLDel0m6m[6]	TimeOKInfoStage0m3mOK	Response0m12m[1]	Response0m12m[2]	Response0m12m[3]	Response0m12m[4]	Response0m12m[5]	Response0m12m[6]	RT0m12m[1]	RT0m12m[2]	RT0m12m[3]	RT0m12m[4]	RT0m12m[5]	RT0m12m[6]	ChosenAmt0m12m[1]	ChosenAmt0m12m[2]	ChosenAmt0m12m[3]	ChosenAmt0m12m[4]	ChosenAmt0m12m[5]	ChosenAmt0m12m[6]	ChosenDel0m12m[1]	ChosenDel0m12m[2]	ChosenDel0m12m[3]	ChosenDel0m12m[4]	ChosenDel0m12m[5]	ChosenDel0m12m[6]	IgnoredAmt0m12m[1]	IgnoredAmt0m12m[2]	IgnoredAmt0m12m[3]	IgnoredAmt0m12m[4]	IgnoredAmt0m12m[5]	IgnoredAmt0m12m[6]	IgnoredDel0m12m[1]	IgnoredDel0m12m[2]	IgnoredDel0m12m[3]	IgnoredDel0m12m[4]	IgnoredDel0m12m[5]	IgnoredDel0m12m[6]	SSAmt0m12m[1]	SSAmt0m12m[2]	SSAmt0m12m[3]	SSAmt0m12m[4]	SSAmt0m12m[5]	SSAmt0m12m[6]	SSDel0m12m[1]	SSDel0m12m[2]	SSDel0m12m[3]	SSDel0m12m[4]	SSDel0m12m[5]	SSDel0m12m[6]	LLAmt0m12m[1]	LLAmt0m12m[2]	LLAmt0m12m[3]	LLAmt0m12m[4]	LLAmt0m12m[5]	LLAmt0m12m[6]	LLDel0m12m[1]	LLDel0m12m[2]	LLDel0m12m[3]	LLDel0m12m[4]	LLDel0m12m[5]	LLDel0m12m[6]	TimeOKInfoStage1m2mOK	Response6m12m[1]	Response6m12m[2]	Response6m12m[3]	Response6m12m[4]	Response6m12m[5]	Response6m12m[6]	RT6m12m[1]	RT6m12m[2]	RT6m12m[3]	RT6m12m[4]	RT6m12m[5]	RT6m12m[6]	ChosenAmt6m12m[1]	ChosenAmt6m12m[2]	ChosenAmt6m12m[3]	ChosenAmt6m12m[4]	ChosenAmt6m12m[5]	ChosenAmt6m12m[6]	ChosenDel6m12m[1]	ChosenDel6m12m[2]	ChosenDel6m12m[3]	ChosenDel6m12m[4]	ChosenDel6m12m[5]	ChosenDel6m12m[6]	IgnoredAmt6m12m[1]	IgnoredAmt6m12m[2]	IgnoredAmt6m12m[3]	IgnoredAmt6m12m[4]	IgnoredAmt6m12m[5]	IgnoredAmt6m12m[6]	IgnoredDel6m12m[1]	IgnoredDel6m12m[2]	IgnoredDel6m12m[3]	IgnoredDel6m12m[4]	IgnoredDel6m12m[5]	IgnoredDel6m12m[6]	SSAmt6m12m[1]	SSAmt6m12m[2]	SSAmt6m12m[3]	SSAmt6m12m[4]	SSAmt6m12m[5]	SSAmt6m12m[6]	SSDel6m12m[1]	SSDel6m12m[2]	SSDel6m12m[3]	SSDel6m12m[4]	SSDel6m12m[5]	SSDel6m12m[6]	LLAmt6m12m[1]	LLAmt6m12m[2]	LLAmt6m12m[3]	LLAmt6m12m[4]	LLAmt6m12m[5]	LLAmt6m12m[6]	LLDel6m12m[1]	LLDel6m12m[2]	LLDel6m12m[3]	LLDel6m12m[4]	LLDel6m12m[5]	LLDel6m12m[6]	TimePlotInput0m1mOK	TimePlotInput0m2mOK	TimePlotInput0m3mOK	TimePlotInput1m2mOK	
+150303_1244	11	subjects	1	1	1	0	0	1	10	7	25	0	153	500	1000	1	2	500	468.75	543060.899	0	0	0	0	1	0	11.48199999995995	16.0679999999702	14.32099999999628	5.179000000003725	6.662000000011176	9.984000000054948	1000	1000	1000	1000	968.75	1000	1	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	1	1	1	1	1	1	0	1	1	1	1	0	1	0	0	0	0	1	7	76.25	-7.5	500	0	484.375	1000	2	1	175	1	1	0	0	0	1	7.582000000053085	11.94999999995343	2.964000000036322	4.413999999989756	2.542999999946915	3.229000000050291	500	250	1000	1000	1000	500	0	0	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	187.5	218.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	183	1	1	1	0	0	1	3.728999999933876	2.386999999987893	4.851000000024214	3.464000000036322	4.320999999996275	6.302000000025146	500	250	125	1000	1000	500	0	0	0	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	93.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	186	1	0	0	0	0	1	19.8739999999525	5.241999999969266	2.652000000001863	4.134000000078231	3.728000000002794	9.968999999924563	500	1000	1000	1000	1000	500	1	2	2	2	2	1	0	0	0	0	0	0	0	0	0	0	0	0	500	250	375	437.5	468.75	500	1	1	1	1	1	1	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	138	171	178	159	
+150303_1244	11	subjects	1	2	1	0	0	1	10	7	25	0	156	500	1000	1	2	500	0	543073.878	1	1	1	1	1	1	12.02799999993295	13.40000000002328	6.989000000059605	11.21699999994598	3.633999999961816	9.906000000075437	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	1	1	1	7	17.08333333333331	-5	500	0	250	1000	2	1	194	1	1	1	1	1	1	22.74499999999534	4.788999999989756	3.136000000056811	1.996999999973923	2.214999999967404	10.45200000004843	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	179	1	1	1	1	1	1	16.89500000001863	1.917999999946915	2.371999999973923	1.591000000014901	1.668999999994412	1.668999999994412	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	180	1	1	1	1	1	1	29.2510000000475	1.761999999987893	3.042000000015833	6.910999999963678	3.119999999995343	6.989000000059605	500	250	125	62.5	31.25	500	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	1	1	1	1	1	1	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	146	158	175	153	
+150303_1244	11	subjects	1	3	1	0	0	1	10	7	25	0	189	500	1000	1	2	1000	500	543065.345	0	0	0	0	0	0	53.3990000000922	9.250999999931082	7.175999999977648	5.756000000052154	9.314000000013039	5.226000000024214	1000	1000	1000	1000	1000	1000	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	7	12.91666666666666	5	1000	2	750	1000	2	1	167	0	0	0	0	0	0	7.800000000046566	7.97199999995064	8.985000000102446	3.088999999919906	4.150000000023283	3.025999999954365	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	183	0	0	0	0	0	0	12.8859999999404	6.895000000018627	4.695999999996275	6.380000000004657	4.820999999996275	5.709000000031665	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	176	0	0	0	0	0	0	8.610999999917112	6.552000000025146	4.259000000078231	4.274999999906868	6.489000000059605	7.97199999995064	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	1	1	1	1	1	1	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	114	166	162	165	
+150303_1244	11	subjects	1	4	1	0	0	1	10	7	25	0	155	500	1000	1	2	500	468.75	543059.1360000001	0	0	0	0	0	0	10.63900000008289	6.270999999949709	5.133000000030734	4.148999999975786	11.32600000000093	5.163999999989756	1000	1000	1000	1000	1000	1000	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	1	1	1	1	1	1	0	1	1	1	1	0	1	0	0	0	0	1	7	-61.25000000000001	0.8333333333333357	1000	2	484.375	1000	2	1	174	0	0	0	0	0	0	15.73999999999069	7.660000000032596	5.42899999988731	3.54100000008475	4.383999999961816	12.30799999996088	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	180	0	0	0	0	1	0	12.15300000004936	4.491999999969266	1.544999999925494	2.324000000022352	1.357000000076369	18.39299999992363	1000	1000	1000	1000	968.75	1000	3	3	3	3	0	3	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	180	1	0	0	0	0	1	17.84700000006706	4.523999999975786	5.319000000017695	3.260999999940395	3.0580000000773	3.182000000029802	500	1000	1000	1000	1000	500	1	2	2	2	2	1	0	0	0	0	0	0	0	0	0	0	0	0	500	250	375	437.5	468.75	500	1	1	1	1	1	1	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	159	154	161	166	
+150303_1244	11	subjects	1	5	1	0	0	1	10	7	25	0	155	500	1000	1	2	500	218.75	543055.267	1	0	1	1	1	1	10.59299999999348	10.40500000002794	9.204000000027008	9.437999999965541	8.736000000033528	12.43299999996088	500	1000	375	312.5	281.25	500	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	375	312.5	281.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	1	1	1	1	1	1	0	0	1	1	1	0	1	1	0	0	0	1	7	16.25	-20.83333333333333	500	0	359.375	1000	2	1	168	1	1	1	1	1	1	8.064999999944121	3.807000000029802	6.084000000031665	8.204999999958091	8.393000000040047	5.740999999921769	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	185	1	1	1	1	1	1	6.459000000031665	1.684999999939464	1.496999999973923	2.54300000006333	2.152999999932945	3.33800000010524	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	184	1	1	0	0	0	1	9.984000000054948	1.543999999994412	7.815999999991618	5.256999999983236	7.067000000039116	5.724999999976717	500	250	1000	1000	1000	500	1	1	2	2	2	1	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	187.5	218.75	500	1	1	1	1	1	1	1000	1000	1000	1000	1000	1000	2	2	2	2	2	2	141	162	187	165	
+150303_1244	11	summary	Period	
+150303_1244	11	summary	1	
+150303_1244	11	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	PayAmt2	Titr1Del	Titr1Amt	
+150303_1244	11	session	1	0	0	0	0	0	0	128	128	0	500	
+150303_1244	11	session	2	0	0	0	0	0	0	128	128	0	500	
+150303_1244	11	session	3	0	0	0	0	0	0	128	128	2	1000	
+150303_1244	11	session	4	0	0	0	0	0	0	128	128	2	1000	
+150303_1244	11	session	5	0	0	0	0	0	0	128	128	0	500	
+150303_1244	12	globals	Period	NumPeriods	RepeatTreatment	randomglobal	
+150303_1244	12	globals	1	1	0	0.2061391254915573	
+150303_1244	12	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	PayTrial	AllTrialCounter	control	TimeOKInfoStage0m3mOK	ssamt	llamt	ssdel	lldel	upperbound	lowerbound	StartTime	Response0m3m[1]	Response0m3m[2]	Response0m3m[3]	Response0m3m[4]	Response0m3m[5]	Response0m3m[6]	RT0m3m[1]	RT0m3m[2]	RT0m3m[3]	RT0m3m[4]	RT0m3m[5]	RT0m3m[6]	ChosenAmt0m3m[1]	ChosenAmt0m3m[2]	ChosenAmt0m3m[3]	ChosenAmt0m3m[4]	ChosenAmt0m3m[5]	ChosenAmt0m3m[6]	ChosenDel0m3m[1]	ChosenDel0m3m[2]	ChosenDel0m3m[3]	ChosenDel0m3m[4]	ChosenDel0m3m[5]	ChosenDel0m3m[6]	IgnoredAmt0m3m[1]	IgnoredAmt0m3m[2]	IgnoredAmt0m3m[3]	IgnoredAmt0m3m[4]	IgnoredAmt0m3m[5]	IgnoredAmt0m3m[6]	IgnoredDel0m3m[1]	IgnoredDel0m3m[2]	IgnoredDel0m3m[3]	IgnoredDel0m3m[4]	IgnoredDel0m3m[5]	IgnoredDel0m3m[6]	SSAmt0m3m[1]	SSAmt0m3m[2]	SSAmt0m3m[3]	SSAmt0m3m[4]	SSAmt0m3m[5]	SSAmt0m3m[6]	SSDel0m3m[1]	SSDel0m3m[2]	SSDel0m3m[3]	SSDel0m3m[4]	SSDel0m3m[5]	SSDel0m3m[6]	LLAmt0m3m[1]	LLAmt0m3m[2]	LLAmt0m3m[3]	LLAmt0m3m[4]	LLAmt0m3m[5]	LLAmt0m3m[6]	LLDel0m3m[1]	LLDel0m3m[2]	LLDel0m3m[3]	LLDel0m3m[4]	LLDel0m3m[5]	LLDel0m3m[6]	ChoseLL[1]	ChoseLL[2]	ChoseLL[3]	ChoseLL[4]	ChoseLL[5]	ChoseLL[6]	ChoseSS[1]	ChoseSS[2]	ChoseSS[3]	ChoseSS[4]	ChoseSS[5]	ChoseSS[6]	counter	x	y	PayAmt	PayDel	IndiffAmt	LLAmt	LLDel	SSDel	TimeOKInfoStage0m6mOK	Response0m6m[1]	Response0m6m[2]	Response0m6m[3]	Response0m6m[4]	Response0m6m[5]	Response0m6m[6]	RT0m6m[1]	RT0m6m[2]	RT0m6m[3]	RT0m6m[4]	RT0m6m[5]	RT0m6m[6]	ChosenAmt0m6m[1]	ChosenAmt0m6m[2]	ChosenAmt0m6m[3]	ChosenAmt0m6m[4]	ChosenAmt0m6m[5]	ChosenAmt0m6m[6]	ChosenDel0m6m[1]	ChosenDel0m6m[2]	ChosenDel0m6m[3]	ChosenDel0m6m[4]	ChosenDel0m6m[5]	ChosenDel0m6m[6]	IgnoredAmt0m6m[1]	IgnoredAmt0m6m[2]	IgnoredAmt0m6m[3]	IgnoredAmt0m6m[4]	IgnoredAmt0m6m[5]	IgnoredAmt0m6m[6]	IgnoredDel0m6m[1]	IgnoredDel0m6m[2]	IgnoredDel0m6m[3]	IgnoredDel0m6m[4]	IgnoredDel0m6m[5]	IgnoredDel0m6m[6]	SSAmt0m6m[1]	SSAmt0m6m[2]	SSAmt0m6m[3]	SSAmt0m6m[4]	SSAmt0m6m[5]	SSAmt0m6m[6]	SSDel0m6m[1]	SSDel0m6m[2]	SSDel0m6m[3]	SSDel0m6m[4]	SSDel0m6m[5]	SSDel0m6m[6]	LLAmt0m6m[1]	LLAmt0m6m[2]	LLAmt0m6m[3]	LLAmt0m6m[4]	LLAmt0m6m[5]	LLAmt0m6m[6]	LLDel0m6m[1]	LLDel0m6m[2]	LLDel0m6m[3]	LLDel0m6m[4]	LLDel0m6m[5]	LLDel0m6m[6]	TimeOKInfoStage0m12mOK	Response0m12m[1]	Response0m12m[2]	Response0m12m[3]	Response0m12m[4]	Response0m12m[5]	Response0m12m[6]	RT0m12m[1]	RT0m12m[2]	RT0m12m[3]	RT0m12m[4]	RT0m12m[5]	RT0m12m[6]	ChosenAmt0m12m[1]	ChosenAmt0m12m[2]	ChosenAmt0m12m[3]	ChosenAmt0m12m[4]	ChosenAmt0m12m[5]	ChosenAmt0m12m[6]	ChosenDel0m12m[1]	ChosenDel0m12m[2]	ChosenDel0m12m[3]	ChosenDel0m12m[4]	ChosenDel0m12m[5]	ChosenDel0m12m[6]	IgnoredAmt0m12m[1]	IgnoredAmt0m12m[2]	IgnoredAmt0m12m[3]	IgnoredAmt0m12m[4]	IgnoredAmt0m12m[5]	IgnoredAmt0m12m[6]	IgnoredDel0m12m[1]	IgnoredDel0m12m[2]	IgnoredDel0m12m[3]	IgnoredDel0m12m[4]	IgnoredDel0m12m[5]	IgnoredDel0m12m[6]	SSAmt0m12m[1]	SSAmt0m12m[2]	SSAmt0m12m[3]	SSAmt0m12m[4]	SSAmt0m12m[5]	SSAmt0m12m[6]	SSDel0m12m[1]	SSDel0m12m[2]	SSDel0m12m[3]	SSDel0m12m[4]	SSDel0m12m[5]	SSDel0m12m[6]	LLAmt0m12m[1]	LLAmt0m12m[2]	LLAmt0m12m[3]	LLAmt0m12m[4]	LLAmt0m12m[5]	LLAmt0m12m[6]	LLDel0m12m[1]	LLDel0m12m[2]	LLDel0m12m[3]	LLDel0m12m[4]	LLDel0m12m[5]	LLDel0m12m[6]	TimeOKInfoStage6m12mOK	Response6m12m[1]	Response6m12m[2]	Response6m12m[3]	Response6m12m[4]	Response6m12m[5]	Response6m12m[6]	RT6m12m[1]	RT6m12m[2]	RT6m12m[3]	RT6m12m[4]	RT6m12m[5]	RT6m12m[6]	ChosenAmt6m12m[1]	ChosenAmt6m12m[2]	ChosenAmt6m12m[3]	ChosenAmt6m12m[4]	ChosenAmt6m12m[5]	ChosenAmt6m12m[6]	ChosenDel6m12m[1]	ChosenDel6m12m[2]	ChosenDel6m12m[3]	ChosenDel6m12m[4]	ChosenDel6m12m[5]	ChosenDel6m12m[6]	IgnoredAmt6m12m[1]	IgnoredAmt6m12m[2]	IgnoredAmt6m12m[3]	IgnoredAmt6m12m[4]	IgnoredAmt6m12m[5]	IgnoredAmt6m12m[6]	IgnoredDel6m12m[1]	IgnoredDel6m12m[2]	IgnoredDel6m12m[3]	IgnoredDel6m12m[4]	IgnoredDel6m12m[5]	IgnoredDel6m12m[6]	SSAmt6m12m[1]	SSAmt6m12m[2]	SSAmt6m12m[3]	SSAmt6m12m[4]	SSAmt6m12m[5]	SSAmt6m12m[6]	SSDel6m12m[1]	SSDel6m12m[2]	SSDel6m12m[3]	SSDel6m12m[4]	SSDel6m12m[5]	SSDel6m12m[6]	LLAmt6m12m[1]	LLAmt6m12m[2]	LLAmt6m12m[3]	LLAmt6m12m[4]	LLAmt6m12m[5]	LLAmt6m12m[6]	LLDel6m12m[1]	LLDel6m12m[2]	LLDel6m12m[3]	LLDel6m12m[4]	LLDel6m12m[5]	LLDel6m12m[6]	TimePlotInput0m3mOK	TimePlotInput0m6mOK	TimePlotInput0m12mOK	TimePlotInput6m12mOK	
+150303_1244	12	subjects	1	1	1	0	0	1	11	6	25	0	188	500	1000	6	12	500	93.75	543293.543	1	0	0	0	0	1	4.632999999914318	15.00800000003073	3.042000000015833	2.432999999960885	3.885000000009313	1.90300000004936	500	1000	1000	1000	1000	500	0	3	3	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	375	437.5	468.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	0	0	0	1	1	0	1	1	1	0	0	1	7	25.41666666666666	-31.66666666666666	500	0	296.875	1000	12	6	193	1	1	1	0	0	1	3.884000000078231	2.979999999981374	3.510000000009313	2.277000000001863	1.981999999959953	1.481999999959953	500	250	125	1000	1000	500	0	0	0	6	6	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	93.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	6	6	6	6	6	6	195	1	1	1	0	0	1	3.556999999913387	2.761000000056811	3.836999999941327	3.027000000001863	1.418999999994412	1.88800000003539	500	250	125	1000	1000	500	0	0	0	12	12	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	93.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	194	1	1	1	0	0	1	4.507999999914318	2.29300000006333	5.054999999934807	1.856000000028871	1.841000000014901	1.559999999939464	500	250	125	1000	1000	500	6	6	6	12	12	6	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	93.75	500	6	6	6	6	6	6	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	171	188	187	186	
+150303_1244	12	subjects	1	2	1	0	0	1	11	6	25	0	180	500	1000	6	12	500	0	543318.316	1	1	1	1	1	1	7.878000000026077	1.731000000028871	3.027000000001863	1.512999999918975	1.653999999980442	1.793999999994412	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	0	0	0	0	0	0	1	1	1	1	1	1	7	-3.75	-0.8333333333333286	500	0	250	1000	12	6	192	1	1	1	1	1	1	12.79200000001583	4.086999999941327	2.714000000036322	2.091000000014901	2.230999999912456	2.02800000004936	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	6	6	6	6	6	6	193	1	1	1	1	1	1	5.240999999921769	1.37300000002142	1.90300000004936	1.966000000014901	1.933999999891967	1.950000000069849	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	189	1	1	1	1	1	1	25.72500000009313	1.777999999932945	3.401000000070781	1.684999999939464	1.606999999959953	1.77800000004936	500	250	125	62.5	31.25	500	6	6	6	6	6	6	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	6	6	6	6	6	6	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	184	177	188	168	
+150303_1244	12	subjects	1	3	1	0	0	1	11	6	25	0	153	500	1000	6	12	1000	500	543317.973	0	0	0	0	0	0	6.364999999990687	5.507000000099652	3.431999999913387	3.307000000029802	1.996999999973923	2.590000000083819	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	1	1	1	1	1	1	0	0	0	0	0	0	7	-8.75	14.16666666666667	1000	3	750	1000	12	6	183	0	0	0	0	0	0	5.662000000011176	1.685000000055879	2.838999999919906	4.820999999996275	2.8080000000773	2.963999999919906	1000	1000	1000	1000	1000	1000	6	6	6	6	6	6	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	6	6	6	6	6	6	184	0	0	0	0	0	0	8.440000000060536	1.856000000028871	2.261999999987893	1.294999999925494	1.51300000003539	4.275000000023283	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	179	0	0	0	0	0	0	9.329000000027008	1.42000000004191	3.228999999933876	1.793999999994412	4.165000000037253	5.086000000010245	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	6	6	6	6	6	6	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	178	181	182	178	
+150303_1244	12	subjects	1	4	1	0	0	1	11	6	25	0	181	500	1000	6	12	968.75	500	543307.334	0	0	0	0	0	0	8.142999999923632	4.103000000002794	2.15300000004936	1.886999999987893	4.165000000037253	8.377999999909662	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	1	1	1	1	0	1	0	0	0	0	1	0	7	31.25	-5	1000	3	734.375	1000	12	6	191	1	0	0	0	0	1	6.880000000004657	3.587999999988824	2.902000000001863	1.716000000014901	1.293999999994412	4.087999999988824	500	1000	1000	1000	1000	500	0	6	6	6	6	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	375	437.5	468.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	6	6	6	6	6	6	192	0	0	0	0	1	0	11.8399999999674	2.168999999994412	1.591000000014901	1.77800000004936	1.233000000007451	3.540999999968335	1000	1000	1000	1000	968.75	1000	12	12	12	12	0	12	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	190	0	0	0	0	1	0	7.925000000046566	4.679999999934807	1.326000000000931	4.555000000051223	5.444999999948777	2.496000000042841	1000	1000	1000	1000	968.75	1000	12	12	12	12	6	12	0	0	0	0	0	0	0	0	0	0	0	0	500	750	875	937.5	968.75	500	6	6	6	6	6	6	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	173	182	180	177	
+150303_1244	12	subjects	1	5	1	0	0	1	11	6	25	0	182	500	1000	6	12	500	93.75	543327.52	1	1	1	1	1	1	6.957000000053085	4.993000000016764	4.070999999996275	2.777000000001863	6.770000000018627	1.37300000002142	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	3	3	3	3	3	3	0	0	0	1	1	0	1	1	1	0	0	1	7	43.75	-14.16666666666666	500	0	296.875	1000	12	6	195	1	1	1	1	1	1	7.863000000012107	2.636000000056811	2.121999999973923	1.496999999973923	1.202000000048429	1.216000000014901	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	6	6	6	6	6	6	192	1	1	1	1	1	1	10.73300000000745	2.542999999946915	1.825000000069849	0.9669999999459833	1.435000000055879	1.622999999905005	500	250	125	62.5	31.25	500	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	31.25	500	0	0	0	0	0	0	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	179	1	1	1	0	0	1	8.143999999971129	7.315999999991618	6.724000000045635	2.931999999913387	4.400000000023283	4.508000000030734	500	250	125	1000	1000	500	6	6	6	12	12	6	0	0	0	0	0	0	0	0	0	0	0	0	500	250	125	62.5	93.75	500	6	6	6	6	6	6	1000	1000	1000	1000	1000	1000	12	12	12	12	12	12	175	188	184	169	
+150303_1244	12	summary	Period	
+150303_1244	12	summary	1	
+150303_1244	12	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	PayAmt2	Titr1Del	Titr1Amt	Titr2Del	Titr2Amt	
+150303_1244	12	session	1	0	0	0	0	0	0	128	128	0	500	0	500	
+150303_1244	12	session	2	0	0	0	0	0	0	128	128	0	500	0	500	
+150303_1244	12	session	3	0	0	0	0	0	0	128	128	2	1000	3	1000	
+150303_1244	12	session	4	0	0	0	0	0	0	128	128	2	1000	3	1000	
+150303_1244	12	session	5	0	0	0	0	0	0	128	128	0	500	0	500	
+150303_1244	13	globals	Period	NumPeriods	RepeatTreatment	
+150303_1244	13	globals	1	1	0	
+150303_1244	13	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	counter	heads	MPLChoice	HeadsValue[1]	HeadsValue[2]	HeadsValue[3]	HeadsValue[4]	HeadsValue[5]	HeadsValue[6]	TailsValue[1]	TailsValue[2]	TailsValue[3]	TailsValue[4]	TailsValue[5]	TailsValue[6]	TimeOKInfoStagePrePlayOK	StartTime	x	y	MPLRT	TimeOKInfoStagePreCalcOK	thisrand	payamt	TimePlotInputPriceListsOK	
+150303_1244	13	subjects	1	1	1	28	28	1	12	1	0	1	28	24	20	16	12	2	28	36	44	52	60	70	138	543445.909	-13.92405063291139	-63.63636363636365	30.40500000002794	190	0.7545788147275238	28	-2	
+150303_1244	13	subjects	1	2	1	28	28	1	12	1	0	1	28	24	20	16	12	2	28	36	44	52	60	70	131	543445.909	7.172995780590725	36.36363636363636	34.49199999996927	190	0.6188289581885696	28	-6	
+150303_1244	13	subjects	1	3	1	70	70	1	12	1	0	6	28	24	20	16	12	2	28	36	44	52	60	70	165	543445.909	-10.54852320675106	-72.72727272727275	35.17800000007264	179	0.9259847574522648	70	-7	
+150303_1244	13	subjects	1	4	1	12	12	1	12	1	1	5	28	24	20	16	12	2	28	36	44	52	60	70	137	543445.909	-40.92827004219409	-50.00000000000001	38.06400000001304	193	0.117404635584636	12	-9	
+150303_1244	13	subjects	1	5	1	24	24	1	12	1	1	2	28	24	20	16	12	2	28	36	44	52	60	70	127	543445.909	8.860759493670884	77.27272727272727	35.52199999999721	190	0.2907048218374629	24	-9	
+150303_1244	13	summary	Period	
+150303_1244	13	summary	1	
+150303_1244	13	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	PayAmt2	Titr1Del	Titr1Amt	Titr2Del	Titr2Amt	MPLProfit	
+150303_1244	13	session	1	28	0	0	0	28	28	128	128	0	500	0	500	28	
+150303_1244	13	session	2	28	0	0	0	28	28	128	128	0	500	0	500	28	
+150303_1244	13	session	3	70	0	0	0	70	70	128	128	2	1000	3	1000	70	
+150303_1244	13	session	4	12	0	0	0	12	12	128	128	2	1000	3	1000	12	
+150303_1244	13	session	5	24	0	0	0	24	24	128	128	0	500	0	500	24	
+150303_1244	14	globals	Period	NumPeriods	RepeatTreatment	AuctionStop	AuctionNoStop	
+150303_1244	14	globals	1	1	0	0	0	
+150303_1244	14	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREATMENTID	response[1]	response[2]	response[3]	response[4]	response[5]	response[6]	response[7]	response[8]	response[9]	response[10]	response[11]	response[12]	response[13]	RT[1]	RT[2]	RT[3]	RT[4]	RT[5]	RT[6]	RT[7]	RT[8]	RT[9]	RT[10]	RT[11]	RT[12]	RT[13]	counter	control	StartTime	height	x	y	TestMouseX	TestMouseY	number	digit1	digit2	digit3	digit4	digit5	digit6	digit7	digit8	digit9	digit10	digit11	numdigits	BMI	TimePlotInputQuestion1HeightOK	TimePlotInputQuestion2WeightOK	TimePlotInputQuestion3SiblingsOK	TimePlotInputQuestion4IncomeOK	TimePlotInputQuestion5SpendingOK	TimePlotInputQuestion6DependentsOK	TimePlotInputQuestion7SupportedOK	TimePlotInputQuestion8EmploymentOK	TimePlotInputQuestion9DebtOK	TimePlotInputQuestion10SmokeOK	TimePlotInputQuestion11DrinkOK	TimePlotInputQuestion12WakeOK	TimePlotInputQuestion13PaymentsOK	
+150303_1244	14	subjects	1	1	1	0	0	1	13	170.2	69	3	6000	500	3	2	2	2	2	2	5	5	18.92299999995157	17.48700000008103	14.42999999993481	43.05599999998231	61.13699999998789	14.50800000003073	6.412000000011176	12.51199999998789	7.192000000039116	3.276000000070781	5.755999999935739	9.905999999959022	22.69900000002235	13	0	543813.494	170.2	35.93073593073592	-33.33333333333334	-15.78947368421054	-19.88304093567252	3	3	99	99	99	99	99	99	99	99	99	99	1	23.819354019119	13	44	47	18	0	47	56	51	55	59	57	54	43	
+150303_1244	14	subjects	1	2	1	0	0	1	13	175.3	70	6	9000	7000	4	1	2	1	1	1	5.5	5	46.86300000001211	17.09700000006706	21.20100000000093	53.74199999996927	43.88300000003073	21.26300000003539	19.01599999994505	11.23199999995995	7.908999999985099	7.690999999991618	7.144999999902211	26.84799999999814	14.52299999992829	13	0	543855.069	175.3	-35.93073593073594	19.54022988505747	-20.46783625730994	15.20467836257309	4	4	99	99	99	99	99	99	99	99	99	99	1	22.77897656661598	-15	44	40	8	18	42	45	54	55	55	56	35	47	
+150303_1244	14	subjects	1	3	1	0	0	1	13	175.3	82	4	3800	2500	8	2	2	1	2	1	5	5	41.35600000002887	16.38000000000466	16.52099999994971	35.73999999999069	21.93400000000838	14.10300000000279	14.99199999996927	5.959000000031665	11.74699999997392	5.366000000038184	14.68000000005122	7.190999999991618	29.92099999997299	13	0	543827.971	175.3	12.55411255411255	24.13793103448275	25.14619883040935	29.23976608187134	8	8	99	99	99	99	99	99	99	99	99	99	1	26.68394397803586	-10	45	45	26	40	47	49	57	52	58	49	56	33	
+150303_1244	14	subjects	1	4	1	0	0	1	13	170.2	70	7	24000	11000	0	2	1	2	2	1	7	1	49.21899999992456	14.97600000002421	18.17399999999907	53.18099999998231	33.30599999998231	16.17700000002515	7.129000000073575	9.344000000040978	4.586999999941327	16.83200000005309	9.016999999992549	9.547000000020489	23.94599999999628	13	0	543826.567	170.2	3.030303030303031	-44.82758620689656	6.432748538011694	-17.54385964912281	0	0	99	99	99	99	99	99	99	99	99	99	1	24.1645620483816	-18	47	43	8	28	46	55	53	58	50	53	54	38	
+150303_1244	14	subjects	1	5	1	0	0	1	13	152.4	63	7	8500	6000	4	2	2	1	2	1	5.5	3	49.59299999999348	12.29300000006333	18.54899999999907	38.23599999991711	32.01199999998789	16.22400000004564	16.34900000004564	9.515999999945052	5.241000000038184	6.099999999976717	7.207000000053085	11.35699999995995	25.13199999998324	13	0	543825.912	152.4	-45.45454545454545	-14.9425287356322	20.46783625730994	12.86549707602339	4	4	99	99	99	99	99	99	99	99	99	99	1	27.1250542501085	-18	49	43	23	30	46	47	54	58	57	55	52	38	
+150303_1244	14	summary	Period	
+150303_1244	14	summary	1	
+150303_1244	14	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	PayAmt2	Titr1Del	Titr1Amt	Titr2Del	Titr2Amt	MPLProfit	
+150303_1244	14	session	1	28	0	0	0	28	28	128	128	0	500	0	500	28	
+150303_1244	14	session	2	28	0	0	0	28	28	128	128	0	500	0	500	28	
+150303_1244	14	session	3	70	0	0	0	70	70	128	128	2	1000	3	1000	70	
+150303_1244	14	session	4	12	0	0	0	12	12	128	128	2	1000	3	1000	12	
+150303_1244	14	session	5	24	0	0	0	24	24	128	128	0	500	0	500	24	
+150303_1244	15	globals	Period	NumPeriods	RepeatTreatment	randomglobal3	AuctionStop	AuctionNoStop	
+150303_1244	15	globals	1	1	0	0.7568845519595242	0	0	
+150303_1244	15	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	TREAMTENTID	Titr1Amt	Titr2Amt	Titr1Del	Titr2Del	PayAmt1	PayAmt2	MPLProfit	FlatPay	randompay[1]	randompay[2]	randomdelay[1]	randomdelay[2]	CPRpay[1]	CPRpay[2]	PayTrial	PayAmtTitr	PayDelTitr	PayAmtCPR	PayMsg	PayTitr	TimeOKInfoStageFinalOK	nowprofit	
+150303_1244	15	subjects	1	1	1	0	0	1	14	500	500	0	0	128	128	28	150	500	500	0	0	128	128	2	500	0	128	1	0.986936844413605	188	806	
+150303_1244	15	subjects	1	2	1	0	0	1	14	500	500	0	0	128	128	28	150	500	500	0	0	128	128	2	0	0	128	0	0.8018698775218194	189	306	
+150303_1244	15	subjects	1	3	1	0	0	1	14	1000	1000	2	3	128	128	70	150	1000	1000	2	3	128	128	2	0	0	128	0	0.5626123424445336	188	348	
+150303_1244	15	subjects	1	4	1	0	0	1	14	1000	1000	2	3	128	128	12	150	1000	1000	2	3	128	128	2	0	0	128	0	0.9315330995859267	191	290	
+150303_1244	15	subjects	1	5	1	0	0	1	14	500	500	0	0	128	128	24	150	500	500	0	0	128	128	2	0	0	128	0	0.6341257638456885	191	302	
+150303_1244	15	summary	Period	
+150303_1244	15	summary	1	
+150303_1244	15	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	PayAmt1	PayAmt2	Titr1Del	Titr1Amt	Titr2Del	Titr2Amt	MPLProfit	PayNow	PayAmt	PayDel	
+150303_1244	15	session	1	28	0	0	0	28	28	128	128	0	500	0	500	28	806	500	0	
+150303_1244	15	session	2	28	0	0	0	28	28	128	128	0	500	0	500	28	306	0	0	
+150303_1244	15	session	3	70	0	0	0	70	70	128	128	2	1000	3	1000	70	348	0	0	
+150303_1244	15	session	4	12	0	0	0	12	12	128	128	2	1000	3	1000	12	290	0	0	
+150303_1244	15	session	5	24	0	0	0	24	24	128	128	0	500	0	500	24	302	0	0	

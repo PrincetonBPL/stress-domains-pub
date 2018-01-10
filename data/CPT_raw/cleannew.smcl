@@ -1,0 +1,371 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/ericjang/Dropbox-Busara/Dropbox/busara/6_Projects/B04coldpressor/STATA/Data Files/Sessions/cleannew.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}12 Aug 2013, 16:52:15
+{txt}
+{com}. log off
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/ericjang/Dropbox-Busara/Dropbox/busara/6_Projects/B04coldpressor/STATA/Data Files/Sessions/cleannew.smcl
+  {txt}log type:  {res}smcl
+ {txt}paused on:  {res}12 Aug 2013, 16:52:15
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/ericjang/Dropbox-Busara/Dropbox/busara/6_Projects/B04coldpressor/STATA/Data Files/Sessions/cleannew.smcl
+  {txt}log type:  {res}smcl
+{txt}resumed on:  {res}12 Aug 2013, 16:52:16
+{txt}
+{com}.         *** Summary of Variables of Interest ***
+.         
+.         * indiff : Indifference point between sooner money and 200KSH future money (lower ~ more impatient)
+.         * fract : Proportion of "patient" responses (lower ~ more impatient)
+.         * delta : Exponential Discount rate (lower ~ less impatient)
+.         
+.         *********************
+.         *** BASIC RESULTS ***
+.         *********************
+.         xi: reg indiff treat i.type, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}    1410
+                                                       {txt}F(  6,   234) ={res}   18.61
+                                                       {txt}Prob > F      = {res} 0.0000
+                                                       {txt}R-squared     = {res} 0.0586
+                                                       {txt}Root MSE      = {res} 68.305
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:235} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}      indiff{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2} 1.400056{col 26}{space 2} 6.855515{col 37}{space 1}    0.20{col 46}{space 3}0.838{col 54}{space 4}-12.10636{col 67}{space 3} 14.90647
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2}-7.340426{col 26}{space 2} 3.807744{col 37}{space 1}   -1.93{col 46}{space 3}0.055{col 54}{space 4}-14.84227{col 67}{space 3} .1614157
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2}-14.41489{col 26}{space 2} 4.075964{col 37}{space 1}   -3.54{col 46}{space 3}0.000{col 54}{space 4}-22.44517{col 67}{space 3}-6.384618
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2} -9.62766{col 26}{space 2} 4.140081{col 37}{space 1}   -2.33{col 46}{space 3}0.021{col 54}{space 4}-17.78426{col 67}{space 3}-1.471063
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2} 33.19149{col 26}{space 2} 5.164416{col 37}{space 1}    6.43{col 46}{space 3}0.000{col 54}{space 4}  23.0168{col 67}{space 3} 43.36618
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2} 18.53723{col 26}{space 2} 4.843161{col 37}{space 1}    3.83{col 46}{space 3}0.000{col 54}{space 4} 8.995462{col 67}{space 3} 28.07901
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 58.48582{col 26}{space 2}  5.52309{col 37}{space 1}   10.59{col 46}{space 3}0.000{col 54}{space 4} 47.60449{col 67}{space 3} 69.36716
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         xi: reg fract treat i.type, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}    1410
+                                                       {txt}F(  6,   234) ={res}   15.72
+                                                       {txt}Prob > F      = {res} 0.0000
+                                                       {txt}R-squared     = {res} 0.0488
+                                                       {txt}Root MSE      = {res}  .3441
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:235} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}       fract{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2} .0006036{col 26}{space 2} .0351298{col 37}{space 1}    0.02{col 46}{space 3}0.986{col 54}{space 4}-.0686074{col 67}{space 3} .0698146
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2}-.0390071{col 26}{space 2} .0184654{col 37}{space 1}   -2.11{col 46}{space 3}0.036{col 54}{space 4}-.0753868{col 67}{space 3}-.0026274
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2}-.0666667{col 26}{space 2}  .019563{col 37}{space 1}   -3.41{col 46}{space 3}0.001{col 54}{space 4}-.1052087{col 67}{space 3}-.0281246
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2}-.0588652{col 26}{space 2} .0200152{col 37}{space 1}   -2.94{col 46}{space 3}0.004{col 54}{space 4}-.0982983{col 67}{space 3}-.0194322
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2} .1375886{col 26}{space 2}  .024173{col 37}{space 1}    5.69{col 46}{space 3}0.000{col 54}{space 4} .0899641{col 67}{space 3} .1852132
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2} .0929078{col 26}{space 2} .0254222{col 37}{space 1}    3.65{col 46}{space 3}0.000{col 54}{space 4} .0428221{col 67}{space 3} .1429935
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .3344487{col 26}{space 2} .0283417{col 37}{space 1}   11.80{col 46}{space 3}0.000{col 54}{space 4} .2786112{col 67}{space 3} .3902862
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         xi: reg delta treat i.type, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}    1410
+                                                       {txt}F(  6,   234) ={res}   63.19
+                                                       {txt}Prob > F      = {res} 0.0000
+                                                       {txt}R-squared     = {res} 0.1962
+                                                       {txt}Root MSE      = {res} 4.2932
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:235} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}       delta{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2} .1374988{col 26}{space 2} .3914911{col 37}{space 1}    0.35{col 46}{space 3}0.726{col 54}{space 4}-.6337987{col 67}{space 3} .9087963
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2}-3.951704{col 26}{space 2} .3242095{col 37}{space 1}  -12.19{col 46}{space 3}0.000{col 54}{space 4}-4.590446{col 67}{space 3}-3.312961
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2}-5.341854{col 26}{space 2} .3640688{col 37}{space 1}  -14.67{col 46}{space 3}0.000{col 54}{space 4}-6.059125{col 67}{space 3}-4.624582
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2}-6.283233{col 26}{space 2} .3705361{col 37}{space 1}  -16.96{col 46}{space 3}0.000{col 54}{space 4}-7.013247{col 67}{space 3} -5.55322
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2}-2.848715{col 26}{space 2} .4460637{col 37}{space 1}   -6.39{col 46}{space 3}0.000{col 54}{space 4}-3.727529{col 67}{space 3}  -1.9699
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2}-5.575895{col 26}{space 2} .3941966{col 37}{space 1}  -14.14{col 46}{space 3}0.000{col 54}{space 4}-6.352523{col 67}{space 3}-4.799267
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 8.870958{col 26}{space 2} .4516303{col 37}{space 1}   19.64{col 46}{space 3}0.000{col 54}{space 4} 7.981177{col 67}{space 3} 9.760739
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         xi: reg decreaseimpatience treat i.type, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}    1410
+                                                       {help j_robustsingular:F(  1,   234) =}       .
+                                                       {txt}Prob > F      = {res}      .
+                                                       {txt}R-squared     = {res} 0.0000
+                                                       {txt}Root MSE      = {res}  2.437
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:235} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}decreaseim~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2} .0240992{col 26}{space 2} .3186163{col 37}{space 1}    0.08{col 46}{space 3}0.940{col 54}{space 4}-.6036239{col 67}{space 3} .6518223
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2} 4.20e-16{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2} 4.01e-16{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2} 4.08e-16{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2} 4.34e-16{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2} 4.28e-16{col 26}{space 2}        .{col 37}{space 1}       .{col 46}{space 3}    .{col 54}{space 4}        .{col 67}{space 3}        .
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-2.343631{col 26}{space 2} .2343706{col 37}{space 1}  -10.00{col 46}{space 3}0.000{col 54}{space 4}-2.805377{col 67}{space 3}-1.881885
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         xi: reg departure treat i.type, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}    1410
+                                                       {help j_robustsingular:F(  2,   234) =}       .
+                                                       {txt}Prob > F      = {res}      .
+                                                       {txt}R-squared     = {res} 0.0021
+                                                       {txt}Root MSE      = {res} 3.4798
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:235} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}   departure{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2} .3212404{col 26}{space 2} .4551295{col 37}{space 1}    0.71{col 46}{space 3}0.481{col 54}{space 4}-.5754347{col 67}{space 3} 1.217915
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2} 3.24e-17{col 26}{space 2} 5.39e-08{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4}-1.06e-07{col 67}{space 3} 1.06e-07
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2}-6.41e-18{col 26}{space 2} 5.27e-08{col 37}{space 1}   -0.00{col 46}{space 3}1.000{col 54}{space 4}-1.04e-07{col 67}{space 3} 1.04e-07
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2} 6.85e-18{col 26}{space 2} 5.27e-08{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4}-1.04e-07{col 67}{space 3} 1.04e-07
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2} 2.55e-17{col 26}{space 2} 5.71e-08{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4}-1.13e-07{col 67}{space 3} 1.13e-07
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2} 1.52e-17{col 26}{space 2} 5.50e-08{col 37}{space 1}    0.00{col 46}{space 3}1.000{col 54}{space 4}-1.08e-07{col 67}{space 3} 1.08e-07
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-1.785495{col 26}{space 2} .3487869{col 37}{space 1}   -5.12{col 46}{space 3}0.000{col 54}{space 4}-2.472659{col 67}{space 3}-1.098331
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         
+.         ** HETEROGENEOUS EFFECTS **
+.         * 1) Effect on those who switched at least once - NO RESULT
+.         * 2) Effect on those who were conistent (Response1=Response6) - NO RESULT
+.         * 3) Effect on those who showed subjective increases in stress - NO RESULT
+.         * 4) Using finalchoice* as an outcome variable, fraction of patient responses - NO RESULT
+.         * Combination of 1 & 4 - YES
+.         
+.         **************************
+.         *** PROMISING RESULTS? ***
+.         **************************
+.         * Restricting sample to those who have switched at least once and who were consistent (i.e. answered question 1 and 6 the same way)
+.         xi: reg indiff treat i.type if cons==1 & indiff>4 & indiff<195, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}     484
+                                                       {txt}F(  6,   157) ={res}   17.56
+                                                       {txt}Prob > F      = {res} 0.0000
+                                                       {txt}R-squared     = {res} 0.1783
+                                                       {txt}Root MSE      = {res} 43.658
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:158} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}      indiff{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2}  12.7378{col 26}{space 2} 6.005789{col 37}{space 1}    2.12{col 46}{space 3}0.035{col 54}{space 4} .8752318{col 67}{space 3} 24.60037
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2}-13.72024{col 26}{space 2} 4.785021{col 37}{space 1}   -2.87{col 46}{space 3}0.005{col 54}{space 4}-23.17156{col 67}{space 3}-4.268921
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2}-11.04371{col 26}{space 2} 4.893133{col 37}{space 1}   -2.26{col 46}{space 3}0.025{col 54}{space 4}-20.70858{col 67}{space 3}-1.378848
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2}-8.054697{col 26}{space 2} 5.641272{col 37}{space 1}   -1.43{col 46}{space 3}0.155{col 54}{space 4}-19.19728{col 67}{space 3} 3.087882
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2} 37.58893{col 26}{space 2} 6.949009{col 37}{space 1}    5.41{col 46}{space 3}0.000{col 54}{space 4} 23.86332{col 67}{space 3} 51.31453
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2} 21.70637{col 26}{space 2} 5.875589{col 37}{space 1}    3.69{col 46}{space 3}0.000{col 54}{space 4} 10.10097{col 67}{space 3} 33.31177
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 48.48228{col 26}{space 2}  4.18881{col 37}{space 1}   11.57{col 46}{space 3}0.000{col 54}{space 4} 40.20859{col 67}{space 3} 56.75597
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         xi: reg fract treat i.type if cons==1 & indiff>4 & indiff<195, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}     484
+                                                       {txt}F(  6,   157) ={res}   10.86
+                                                       {txt}Prob > F      = {res} 0.0000
+                                                       {txt}R-squared     = {res} 0.1223
+                                                       {txt}Root MSE      = {res}  .1763
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:158} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}       fract{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2} .0448958{col 26}{space 2} .0239613{col 37}{space 1}    1.87{col 46}{space 3}0.063{col 54}{space 4}-.0024323{col 67}{space 3} .0922238
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2}-.0191489{col 26}{space 2} .0218016{col 37}{space 1}   -0.88{col 46}{space 3}0.381{col 54}{space 4}-.0622111{col 67}{space 3} .0239134
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2}-.0209372{col 26}{space 2} .0217274{col 37}{space 1}   -0.96{col 46}{space 3}0.337{col 54}{space 4} -.063853{col 67}{space 3} .0219786
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2}-.0141811{col 26}{space 2} .0218222{col 37}{space 1}   -0.65{col 46}{space 3}0.517{col 54}{space 4} -.057284{col 67}{space 3} .0289219
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2} .1252318{col 26}{space 2}  .026546{col 37}{space 1}    4.72{col 46}{space 3}0.000{col 54}{space 4} .0727985{col 67}{space 3} .1776651
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2} .0968877{col 26}{space 2} .0258026{col 37}{space 1}    3.75{col 46}{space 3}0.000{col 54}{space 4} .0459226{col 67}{space 3} .1478527
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .3345902{col 26}{space 2} .0190615{col 37}{space 1}   17.55{col 46}{space 3}0.000{col 54}{space 4} .2969401{col 67}{space 3} .3722403
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         xi: reg delta treat i.type if cons==1 & indiff>4 & indiff<195, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}     484
+                                                       {txt}F(  6,   157) ={res}   43.00
+                                                       {txt}Prob > F      = {res} 0.0000
+                                                       {txt}R-squared     = {res} 0.3380
+                                                       {txt}Root MSE      = {res} 2.3155
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:158} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}       delta{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2}-.5108868{col 26}{space 2} .2835972{col 37}{space 1}   -1.80{col 46}{space 3}0.074{col 54}{space 4}-1.071045{col 67}{space 3} .0492714
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2}-2.723283{col 26}{space 2} .3314876{col 37}{space 1}   -8.22{col 46}{space 3}0.000{col 54}{space 4}-3.378034{col 67}{space 3}-2.068532
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2}-4.072912{col 26}{space 2} .3434244{col 37}{space 1}  -11.86{col 46}{space 3}0.000{col 54}{space 4} -4.75124{col 67}{space 3}-3.394584
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2}-4.625204{col 26}{space 2}  .335798{col 37}{space 1}  -13.77{col 46}{space 3}0.000{col 54}{space 4}-5.288469{col 67}{space 3}-3.961939
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2}-2.301472{col 26}{space 2}  .491615{col 37}{space 1}   -4.68{col 46}{space 3}0.000{col 54}{space 4}-3.272504{col 67}{space 3}-1.330439
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2}-4.234487{col 26}{space 2}  .393068{col 37}{space 1}  -10.77{col 46}{space 3}0.000{col 54}{space 4} -5.01087{col 67}{space 3}-3.458103
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 6.789964{col 26}{space 2} .3480288{col 37}{space 1}   19.51{col 46}{space 3}0.000{col 54}{space 4} 6.102541{col 67}{space 3} 7.477386
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         xi: reg decreaseimpatience treat i.type if cons == 1 & indiff>4 & indiff<195, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}     484
+                                                       {txt}F(  6,   157) ={res}    3.92
+                                                       {txt}Prob > F      = {res} 0.0011
+                                                       {txt}R-squared     = {res} 0.0300
+                                                       {txt}Root MSE      = {res} 1.9732
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:158} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}decreaseim~e{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2} .1961783{col 26}{space 2} .3025957{col 37}{space 1}    0.65{col 46}{space 3}0.518{col 54}{space 4}-.4015054{col 67}{space 3} .7938621
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2} .6210065{col 26}{space 2} .2227342{col 37}{space 1}    2.79{col 46}{space 3}0.006{col 54}{space 4} .1810644{col 67}{space 3} 1.060949
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2} .3081939{col 26}{space 2}  .220088{col 37}{space 1}    1.40{col 46}{space 3}0.163{col 54}{space 4}-.1265215{col 67}{space 3} .7429093
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2} .1187282{col 26}{space 2} .2538085{col 37}{space 1}    0.47{col 46}{space 3}0.641{col 54}{space 4}-.3825916{col 67}{space 3}  .620048
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2}-.2735096{col 26}{space 2} .2367868{col 37}{space 1}   -1.16{col 46}{space 3}0.250{col 54}{space 4}-.7412083{col 67}{space 3} .1941891
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2}-.3608368{col 26}{space 2} .2424146{col 37}{space 1}   -1.49{col 46}{space 3}0.139{col 54}{space 4}-.8396515{col 67}{space 3} .1179779
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-2.135063{col 26}{space 2} .2625854{col 37}{space 1}   -8.13{col 46}{space 3}0.000{col 54}{space 4}-2.653719{col 67}{space 3}-1.616407
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         xi: reg departure treat i.type if cons==1 & indiff>4 & indiff<195, r cluster(sid)
+{txt}i.type{col 19}_Itype_1-6{col 39}(naturally coded; _Itype_1 omitted)
+
+Linear regression                                      Number of obs ={res}     484
+                                                       {txt}F(  6,   157) ={res}    3.38
+                                                       {txt}Prob > F      = {res} 0.0037
+                                                       {txt}R-squared     = {res} 0.0342
+                                                       {txt}Root MSE      = {res} 2.6906
+
+{txt}{ralign 78:(Std. Err. adjusted for {res:158} clusters in sid)}
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}   departure{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}treat {c |}{col 14}{res}{space 2} .4976349{col 26}{space 2} .4121206{col 37}{space 1}    1.21{col 46}{space 3}0.229{col 54}{space 4}-.3163813{col 67}{space 3} 1.311651
+{txt}{space 4}_Itype_2 {c |}{col 14}{res}{space 2} .5457865{col 26}{space 2} .3105399{col 37}{space 1}    1.76{col 46}{space 3}0.081{col 54}{space 4}-.0675886{col 67}{space 3} 1.159162
+{txt}{space 4}_Itype_3 {c |}{col 14}{res}{space 2} .3521866{col 26}{space 2} .3310694{col 37}{space 1}    1.06{col 46}{space 3}0.289{col 54}{space 4} -.301738{col 67}{space 3} 1.006111
+{txt}{space 4}_Itype_4 {c |}{col 14}{res}{space 2} .2072396{col 26}{space 2} .3144326{col 37}{space 1}    0.66{col 46}{space 3}0.511{col 54}{space 4}-.4138243{col 67}{space 3} .8283034
+{txt}{space 4}_Itype_5 {c |}{col 14}{res}{space 2}-.4133763{col 26}{space 2}  .358112{col 37}{space 1}   -1.15{col 46}{space 3}0.250{col 54}{space 4}-1.120715{col 67}{space 3} .2939627
+{txt}{space 4}_Itype_6 {c |}{col 14}{res}{space 2}-.7389393{col 26}{space 2} .3343287{col 37}{space 1}   -2.21{col 46}{space 3}0.029{col 54}{space 4}-1.399302{col 67}{space 3}-.0785769
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}-2.196524{col 26}{space 2} .3569299{col 37}{space 1}   -6.15{col 46}{space 3}0.000{col 54}{space 4}-2.901528{col 67}{space 3} -1.49152
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         
+.         *************************
+.         *** Survival Analysis ***
+.         *************************
+.         
+.         * Using Indifference Points
+.         stset indiff
+
+     {txt}failure event:  {res}(assumed to fail at time=indiff)
+{txt}obs. time interval:  {res}(0, indiff]
+{txt} exit on or before:  {res}failure
+
+{txt}{hline 78}
+{res}     1410{txt}  total obs.
+{res}        0{txt}  exclusions
+{hline 78}
+{res}     1410{txt}  obs. remaining, representing
+{res}     1410{txt}  failures in single record/single failure data
+{res}  88237.5{txt}  total analysis time at risk, at risk from t = {res}        0
+                             {txt}earliest observed entry t = {res}        0
+                                  {txt}last observed exit t = {res}  196.875
+{txt}
+{com}.         sts graph, by(treat)
+
+         {txt}failure _d:  {res}1{txt} (meaning all fail)
+   analysis time _t:  {res}indiff
+{txt}
+{com}.         sts test treat, wilcoxon
+
+         {txt}failure _d:  {res}1{txt} (meaning all fail)
+   analysis time _t:  {res}indiff
+
+
+{txt}{title:Wilcoxon (Breslow) test for equality of survivor functions}
+
+{col 6} {c |}   Events         Events        Sum of
+treat {c |}  observed       expected        ranks
+{hline 6}{c +}{hline 38}
+0     {c |}{res}       702         700.07        -5194
+{txt}1     {c |}{res}       708         709.93         5194
+{txt}{hline 6}{c +}{hline 38}
+Total {c |}{res}      1410        1410.00            0
+
+            {txt}chi2(1) = {res}      0.12
+            {txt}Pr>chi2 = {res}    0.7270
+{txt}
+{com}.         
+.         * Using Discount
+.         stset delta
+
+     {txt}failure event:  {res}(assumed to fail at time=delta)
+{txt}obs. time interval:  {res}(0, delta]
+{txt} exit on or before:  {res}failure
+
+{txt}{hline 78}
+{res}     1410{txt}  total obs.
+{res}        0{txt}  exclusions
+{hline 78}
+{res}     1410{txt}  obs. remaining, representing
+{res}     1410{txt}  failures in single record/single failure data
+{res}  6965.07{txt}  total analysis time at risk, at risk from t = {res}        0
+                             {txt}earliest observed entry t = {res}        0
+                                  {txt}last observed exit t = {res} 16.63553
+{txt}
+{com}.         sts graph, by(treat)
+
+         {txt}failure _d:  {res}1{txt} (meaning all fail)
+   analysis time _t:  {res}delta
+{txt}
+{com}.         sts test treat, wilcoxon
+
+         {txt}failure _d:  {res}1{txt} (meaning all fail)
+   analysis time _t:  {res}delta
+
+
+{txt}{title:Wilcoxon (Breslow) test for equality of survivor functions}
+
+{col 6} {c |}   Events         Events        Sum of
+treat {c |}  observed       expected        ranks
+{hline 6}{c +}{hline 38}
+0     {c |}{res}       702         690.08         2780
+{txt}1     {c |}{res}       708         719.92        -2780
+{txt}{hline 6}{c +}{hline 38}
+Total {c |}{res}      1410        1410.00            0
+
+            {txt}chi2(1) = {res}      0.03
+            {txt}Pr>chi2 = {res}    0.8555
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/ericjang/Dropbox-Busara/Dropbox/busara/6_Projects/B04coldpressor/STATA/Data Files/Sessions/cleannew.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}12 Aug 2013, 16:52:34
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
