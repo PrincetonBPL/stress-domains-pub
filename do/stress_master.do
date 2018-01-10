@@ -25,7 +25,6 @@ cd ../
 glo root_dir "`c(pwd)'"
 glo ado_dir "$root_dir/ado"  		// .ado files
 glo do_dir "$root_dir/do" 			// .do files
-glo log_dir "$root_dir/logs"		// Log files
 glo data_dir "$root_dir/data"	 	// Data
 glo tab_dir "$root_dir/latex"		// Tables
 
@@ -69,9 +68,6 @@ set seed 961146629
 glo currentdate = date("$S_DATE", "DMY")
 glo stringdate : di %td_CY.N.D date("$S_DATE", "DMY")
 glo stamp = trim("$stringdate")
-
-log using "$log_dir/Stress_Log_$stamp.log", name($user) text replace
-
 glo errormsg "Errors:"
 
 /* Clean and merge data */
@@ -117,5 +113,3 @@ timer off 1
 qui timer list
 di "Finished in `r(t1)' seconds."
 di as err "$errormsg"
-
-log close _all
