@@ -5,12 +5,12 @@ This is a public repository containing replication files for "Stress and Tempora
 
 ### Replication
 
-Releases typically contain the data, source code, survey instruments, manuscript, and a summary of the research design. Simply run `stress_master.do` to reproduce tables and figures presented in the manuscript and appendix. These will be output in `tables/` and `figures/` respectively. Experimental data was collected using Z-Tree. Results published in the manuscript were analyzed using Stata 13.1.
+Releases typically contain the data, source code, survey instruments, and a summary of the research design. Simply run `stress_master.do` to reproduce tables and figures presented in the manuscript and appendix. These will be output in `latex/`. Experimental data was collected using Z-Tree. Results published in the manuscript were analyzed using Stata 13.1.
 
 ### Data
 
 + The directories `*_raw/` contain each experiment's raw data. These consist of `.xls` files produced by Z-Tree and `.dta` files containing subject demographics. We strip subject data of personally identifiable information to protect participant privacy.
-+ `*_Cleaned.dta` are intermediate datasets to be further cleaned.
++ `*_Cleaned.dta` are intermediate datasets to be merged into the analytic dataset.
 + `Stress_FinalWide.dta` is the final subject-level dataset containing data from all three lab experiments. This dataset is used to produce all tables in the manuscript.
 + `Stress_FinalTime.dta` is the final subject-by-question level dataset made by reshaping `Stress_FinalWide.dta` with temporal discounting variables.
 + `Stress_FinalNAS.dta` is the final subject-by-question level dataset made by reshaping `Stress_FinalWide.dta` with negative affect variables.
@@ -31,5 +31,3 @@ Releases typically contain the data, source code, survey instruments, manuscript
 ### Contact
 
 The corresponding author is [Johannes Haushofer](haushofer@princeton.edu "haushofer@princeton.edu").
-
-<!-- Releases contain 1. source code, 2. data, 3. tables/figures, 4. summary, 5. instruments, 6. manuscript -->
