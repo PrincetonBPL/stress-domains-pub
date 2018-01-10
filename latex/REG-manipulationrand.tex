@@ -1,0 +1,9 @@
+\begin{table}[htbp]\centering \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} \caption{Treatment effects with randomization inference -- Stress} \label{tab:REG-manipulationrand} \maxsizebox*{\textwidth}{\textheight}{ \begin{threeparttable} \begin{tabular}{l*{6}{c}} \toprule
+          &\multicolumn{3}{c}{Within experiments}&\multicolumn{3}{c}{Across experiments}\\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+          &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+          &\multicolumn{1}{c}{TSST-G}&\multicolumn{1}{c}{CPT}&\multicolumn{1}{c}{CENT}&\multicolumn{1}{c}{\specialcell{CPT vs.\\TSST-G}}&\multicolumn{1}{c}{\specialcell{CENT vs.\\TSST-G}}&\multicolumn{1}{c}{\specialcell{CENT\\vs. CPT}}\\
+\midrule
+Self-reported stress (SD)&    -0.09&1.69\sym{***}&0.49\sym{***}&1.78\sym{***}&0.58\sym{***}&-1.20\sym{***}\\
+          &   (0.17)&   (0.20)&   (0.12)&   (0.27)&   (0.21)&   (0.23)\\
+          &   [0.64]&[0.00\sym{***}]&[0.00\sym{***}]&[0.00\sym{***}]&[0.02\sym{**}]&[0.00\sym{***}]\\
+\bottomrule \end{tabular} \begin{tablenotes}[flushleft] \footnotesize \item \emph{Notes:} Columns 1-3 report treatment effect estimates on each row variable for TSST-G, CPT, and CENT, respectively. Columns 4-6 report differences in the treatment effect across experiments. Analytic cluster-robust standard errors are in parentheses. Exact \(p\)-values obtained from permutation tests are in brackets. Stars on the coefficient estimates indicate significance with conventional \(p\)-values. The bottom row reports exact \(p\)-values of a joint permutation test across row variables. * denotes significance at 10 pct., ** at 5 pct., and *** at 1 pct. \end{tablenotes} \end{threeparttable} } \end{table}
