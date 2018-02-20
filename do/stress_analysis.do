@@ -146,7 +146,7 @@ if $riskflag {
 
 glo yfillmiss ""
 
-foreach v in $ycontrol pre_stress_r {
+foreach v in $ycontrol {
 
 	glo yfillmiss "$yfillmiss `v'_full `v'_miss"
 
