@@ -370,15 +370,21 @@ forval i = 1/6 {
 
 }
 
+** Larger, later amount is different across experiments **
+
 gen time_LLamount = 200
-replace time_LLamount = 1000 if exp_cpr
+replace time_LLamount = 1000 if exp_cpr == 1
 la var time_LLamount "Later, larger amt."
+
+** PPP conversion of monetary values **
 
 foreach v of varlist *amount* time_endowment *pay* {
 
 	if $USDconvertflag replace `v' = `v' * $ppprate
 
 }
+
+** Loop over questions and time delays **
 
 loc i = 1
 
@@ -397,14 +403,17 @@ foreach delay in 0m1m 0m2m 0m3m 0m6m 0m9m 0m12m 1m2m 6m9m 6m12m {
 	loc t0 = real(substr("`delay'", 1, 1))
 	loc t = real(substr("`delay'", 3, length("`delay'") - 3))
 
+	** Check data quality **
+
 	gen time_measured_`i' = time_response1_`i' != .
 	la var time_measured_`i' "Observed time horizon"
 
 	gen time_consistent_`i' = time_response1_`i' == time_response6_`i'
 	la var time_consistent_`i' "Consistency"
 
-	drop time_response6_`i' // Since this is identical to choice 1
-	drop time_SSamount6_`i' // Since this is identical to choice 1
+	drop time_response6_`i' time_SSamount6_`i' // Since this is identical to choice 1
+
+	** Delay-specific variables **
 
 	egen time_frac_`i' = rowmean(time_response*_`i')
 	replace time_frac_`i' = 1 - time_frac_`i'
@@ -412,6 +421,7 @@ foreach delay in 0m1m 0m2m 0m3m 0m6m 0m9m 0m12m 1m2m 6m9m 6m12m {
 
 	gen time_indiffraw_`i' = time_SSamount5_`i' - abs(time_SSamount5_`i' - time_SSamount4_`i') / 2 if time_response5_`i' == 1
 	replace time_indiffraw_`i' = time_SSamount5_`i' + abs(time_SSamount5_`i' - time_SSamount4_`i') / 2 if time_response5_`i' == 0
+	la var time_indiffraw_`i' "Indifference point (raw)"
 
 	gen time_indiff_`i' = time_indiffraw_`i' / time_LLamount
 	la var time_indiff_`i' "Indifference point"
@@ -432,6 +442,8 @@ foreach delay in 0m1m 0m2m 0m3m 0m6m 0m9m 0m12m 1m2m 6m9m 6m12m {
 	loc ++i
 
 }
+
+** Individual-level variables **
 
 gen time_aucmax = (3/12)*time_LLamount + (6/12)*time_LLamount // This is not right
 la var time_aucmax "Maximum AUC"
@@ -509,13 +521,22 @@ saveold "$data_dir/Stress_FinalNAS.dta", replace
 
 use "$data_dir/Stress_FinalWide.dta", clear
 
-loc timevars "time_SSamount1_ time_SSamount2_ time_SSamount3_ time_SSamount4_ time_SSamount5_ time_response1_ time_response2_ time_response3_ time_response4_ time_response5_ time_frac_ time_consistent_ time_indiff_ time_geometric_ time_georaw_ time_exponential_ time_hyperbolic_"
+loc timevars "time_SSamount1_ time_SSamount2_ time_SSamount3_ time_SSamount4_ time_SSamount5_ time_response1_ time_response2_ time_response3_ time_response4_ time_response5_ time_frac_ time_consistent_ time_indiff_ time_indiffraw_ time_geometric_ time_georaw_ time_exponential_ time_hyperbolic_"
 
 reshape long `timevars', i(sid) j(time_horizon)
 
 la var time_horizon "Time horizon"
 la def la_horizon 1 "0m - 1m" 2 "0m - 2m" 3 "0m - 3m" 4 "0m - 6m" 5 "0m - 9m" 6 "0m - 12m" 7 "1m - 2m" 8 "6m - 9m" 9 "6m - 12m"
 la val time_horizon la_horizon
+
+recode time_horizon (1/6 = 1) (7/9 = 0), gen(time_immediate)
+la var time_immediate "Immediate"
+
+recode time_horizon (1 7 = 1) (2 = 2) (3 8 = 3) (4 9 = 6) (5 = 9) (6 = 12), gen(time_delaymo)
+la var time_delaymo "Delay length (months)"
+
+gen time_delayyr = time_delaymo / 12
+la var time_delayyr "Delay length (years)"
 
 ren *_ *
 

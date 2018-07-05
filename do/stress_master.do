@@ -32,10 +32,10 @@ adopath + "$ado_dir"
 
 /* What do you want to do? */
 
-glo cleandataflag = 1				// Convert and clean Z-Tree data
+glo cleandataflag = 0				// Convert and clean Z-Tree data
 glo appenddataflag = 1				// Harmonize all experiments into unified dataset
-glo summaryflag = 1					// Output summary statistics
-glo regtablesflag = 1				// Output regression tables
+glo summaryflag = 0					// Output summary statistics
+glo regtablesflag = 0				// Output regression tables
 
 /* Analysis options */
 
@@ -113,3 +113,7 @@ timer off 1
 qui timer list
 di "Finished in `r(t1)' seconds."
 di as err "$errormsg"
+
+/* Notes
+
+Check calculation of discounting variables in stress_append

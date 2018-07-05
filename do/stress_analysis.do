@@ -100,6 +100,11 @@ if $timeflag {
 
 	do "$do_dir/custom_tables/reg-timehorizon.do"
 
+	/* Quasi-hyperbolic NLS */
+
+	use "$data_dir/Stress_FinalTime.dta", clear
+	do "$do_dir/custom_tables/reg-nls.do"
+
 }
 
 //////////////////////
