@@ -120,7 +120,3 @@ timer off 1
 qui timer list
 di "Finished in `r(t1)' seconds."
 di as err "$errormsg"
-
-/* Notes
-
-Check calculation of discounting variables in stress_append

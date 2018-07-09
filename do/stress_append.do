@@ -412,14 +412,15 @@ foreach delay in 0m1m 0m2m 0m3m 0m6m 0m9m 0m12m 1m2m 6m9m 6m12m {
 
 }
 
-** Individual-level variables **
+** Area under the curve **
 
-gen time_aucmax = (3/12)*time_LLamount + (6/12)*time_LLamount // This is not right
-la var time_aucmax "Maximum AUC"
+gen time_auc = (3/12)*((time_LLamount + time_indiff_3) / 2) + (3/12)*((time_indiff_3 + time_indiff_4) / 2) + (3/12)*((time_indiff_4 + time_indiff_5) / 2) + (3/12)*((time_indiff_5 + time_indiff_6) / 2) if exp_tsst == 1 | exp_cpt == 1
 
-gen time_aucraw = (3/12)*(time_indiffraw_3+time_indiffraw_4)/2 + (6/12)*(time_indiffraw_4+time_indiffraw_6)/2 // This is not right
-gen time_auc = time_aucraw / time_aucmax
+replace time_auc = (1/12)*((time_LLamount + time_indiff_1) / 2) + (1/12)*((time_indiff_1 + time_indiff_2) / 2) + (1/12)*((time_indiff_2 + time_indiff_3) / 2) + (3/12)*((time_indiff_3 + time_indiff_4) / 2) + (6/12)*((time_indiff_4 + time_indiff_6) / 2) if exp_cpr == 1
+
 la var time_auc "Area under the curve"
+
+** Individual-level variables **
 
 egen time_avgindiff = rowmean(time_indiff_?)
 la var time_avgindiff "Avg. indifference point"
@@ -439,11 +440,11 @@ la var time_avghyperbolic "Avg. hyperbolic decay"
 gen time_stationarity = time_exponential_9 - time_exponential_6
 la var time_stationarity "Dept. from stationarity"
 
-gen time_decrimp0 = time_exponential_7 - time_exponential_1
-gen time_decrimp1 = time_exponential_4 - time_exponential_3
-gen time_decrimp2 = time_exponential_6 - time_exponential_4
+gen time_decrimp1 = time_exponential_7 - time_exponential_1
+gen time_decrimp3 = time_exponential_8 - time_exponential_3
+gen time_decrimp6 = time_exponential_9 - time_exponential_4
 
-egen time_decrimp = rowmean(time_decrimp0-time_decrimp2)
+egen time_decrimp = rowmean(time_decrimp?)
 la var time_decrimp "Decreasing impatience"
 
 ***********************
