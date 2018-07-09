@@ -33,11 +33,11 @@ adopath + "$ado_dir"
 
 /* What do you want to do? */
 
-glo cleandataflag = 0				// Convert and clean Z-Tree data
+glo cleandataflag = 1				// Convert and clean Z-Tree data
 glo appenddataflag = 1				// Harmonize all experiments into unified dataset
 glo summaryflag = 0					// Output summary statistics
-glo regtablesflag = 0				// Output regression tables
-glo figuresflag = 0					// Create figures for publication
+glo regtablesflag = 1				// Output regression tables
+glo figuresflag = 1					// Create figures for publication
 
 /* Analysis options */
 
@@ -113,6 +113,8 @@ if $figuresflag {
 }
 
 /* Complete program */
+
+cd do
 
 if length("$errormsg") < 8 glo errormsg "Errors: none"
 
