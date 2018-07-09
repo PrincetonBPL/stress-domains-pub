@@ -219,23 +219,14 @@ foreach v of varlist *_frust *_stress *_NAS* {
 
 }
 
-egen pre_NAStot_z = weightave(pre_NAS*), normby(control)
+egen pre_NAStot_z = rowmean(pre_NAS*_z)
 la var pre_NAStot_z "Negative affect (SD)"
 
-egen mid_NAStot_z = weightave(mid_NAS*), normby(control)
+egen mid_NAStot_z = rowmean(mid_NAS*_z)
 la var mid_NAStot_z "Negative affect (SD)"
 
-egen post_NAStot_z = weightave(post_NAS*), normby(control)
+egen post_NAStot_z = rowmean(post_NAS*_z)
 la var post_NAStot_z "Negative affect (SD)"
-
-egen pre_MSI_z = weightave(pre_NAS* pre_stress), normby(control)
-la var pre_MSI_z "Mental state index"
-
-egen mid_MSI_z = weightave(mid_NAS* mid_stress), normby(control)
-la var mid_MSI_z "Mental state index"
-
-egen post_MSI_z = weightave(post_NAS* post_stress), normby(control)
-la var post_MSI_z "Mental state index"
 
 gen pre_stress_r = .
 la var pre_stress_r "Self-reported stress (SD)"
@@ -245,24 +236,6 @@ la var mid_stress_r "Self-reported stress (SD)"
 
 gen post_stress_r = .
 la var post_stress_r "Self-reported stress (SD)"
-
-gen pre_NAStot_r = .
-la var pre_NAStot_r "Negative affect (SD)"
-
-gen mid_NAStot_r = .
-la var mid_NAStot_r "Negative affect (SD)"
-
-gen post_NAStot_r = .
-la var post_NAStot_r "Negative affect (SD)"
-
-gen pre_MSI_r = .
-la var pre_MSI_r "Mental state index"
-
-gen mid_MSI_r = .
-la var mid_MSI_r "Mental state index"
-
-gen post_MSI_r = .
-la var post_MSI_r "Mental state index"
 
 forval i = 1/10 {
 
@@ -281,12 +254,6 @@ foreach exp in exp_tsst exp_cpt exp_cpr {
 			cap noi: egen `prefix'_stress_`exp' = weightave(`prefix'_stress) if `exp', normby(control_`exp')
 			if _rc gen `prefix'_stress_`exp' = .
 
-			cap noi: egen `prefix'_NAStot_`exp' = weightave(`prefix'_NAS? `prefix'_NAS10) if `exp', normby(control_`exp')
-			if _rc gen `prefix'_NAStot_`exp' = .
-
-			cap noi: egen `prefix'_MSI_`exp' = weightave(`prefix'_stress `prefix'_NAS? `prefix'_NAS10) if `exp', normby(control_`exp')
-			if _rc gen `prefix'_MSI_`exp' = .
-
 			forval i = 1/10 {
 
 				cap noi: egen `prefix'_NAS`i'_`exp' = weightave(`prefix'_NAS`i') if `exp', normby(control_`exp')
@@ -296,18 +263,6 @@ foreach exp in exp_tsst exp_cpt exp_cpr {
 
 		}
 
-	replace pre_stress_r = pre_stress_`exp' if `exp'
-	replace mid_stress_r  = mid_stress_`exp' if `exp'
-	replace post_stress_r = post_stress_`exp' if `exp'
-
-	replace pre_NAStot_r = pre_NAStot_`exp' if `exp'
-	replace mid_NAStot_r  = mid_NAStot_`exp' if `exp'
-	replace post_NAStot_r = post_NAStot_`exp' if `exp'
-
-	replace pre_MSI_r = pre_MSI_`exp' if `exp'
-	replace mid_MSI_r  = mid_MSI_`exp' if `exp'
-	replace post_MSI_r = post_MSI_`exp' if `exp'
-
 	forval i = 1/10 {
 
 		replace pre_NAS`i'_r = pre_NAS`i'_`exp' if `exp'
@@ -316,7 +271,21 @@ foreach exp in exp_tsst exp_cpt exp_cpr {
 
 	}
 
+	replace pre_stress_r = pre_stress_`exp' if `exp'
+	replace mid_stress_r  = mid_stress_`exp' if `exp'
+	replace post_stress_r = post_stress_`exp' if `exp'
+
 }
+
+
+	egen pre_NAStot_r = rowmean(pre_NAS1_r-pre_NAS10_r)
+	la var pre_NAStot_r "Negative affect (SD)"
+
+	egen mid_NAStot_r  = rowmean(mid_NAS1_r-mid_NAS10_r)
+	la var mid_NAStot_r "Negative affect (SD)"
+
+	egen post_NAStot_r = rowmean(post_NAS1_r-post_NAS10_r)
+	la var post_NAStot_r "Negative affect (SD)"
 
 **********************
 ** Risk preferences **

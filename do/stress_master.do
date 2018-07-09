@@ -37,7 +37,7 @@ glo cleandataflag = 0				// Convert and clean Z-Tree data
 glo appenddataflag = 1				// Harmonize all experiments into unified dataset
 glo summaryflag = 0					// Output summary statistics
 glo regtablesflag = 0				// Output regression tables
-glo figuresflag = 1					// Create figures for publication
+glo figuresflag = 0					// Create figures for publication
 
 /* Analysis options */
 
