@@ -26,6 +26,7 @@ glo root_dir "`c(pwd)'"
 glo ado_dir "$root_dir/ado"  		// .ado files
 glo do_dir "$root_dir/do" 			// .do files
 glo data_dir "$root_dir/data"	 	// Data
+glo fig_dir "$root_dir/figures"		// Figures
 glo tab_dir "$root_dir/latex"		// Tables
 
 adopath + "$ado_dir"
@@ -36,6 +37,7 @@ glo cleandataflag = 0				// Convert and clean Z-Tree data
 glo appenddataflag = 1				// Harmonize all experiments into unified dataset
 glo summaryflag = 0					// Output summary statistics
 glo regtablesflag = 0				// Output regression tables
+glo figuresflag = 1					// Create figures for publication
 
 /* Analysis options */
 
@@ -103,6 +105,11 @@ if $summaryflag {
 if $regtablesflag {
 	cap noisily: do "$do_dir/stress_analysis.do"
 	if _rc glo errormsg "$errormsg Regression error."
+}
+
+if $figuresflag {
+	cap noisily: do "$do_dir/stress_figures.do"
+	if _rc glo errormsg "$errormsg Error creating figures."
 }
 
 /* Complete program */

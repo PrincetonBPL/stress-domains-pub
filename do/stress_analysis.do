@@ -26,6 +26,11 @@ if $nasflag {
 	glo regpath "REG-poststress"
 	do "$do_dir/custom_tables/reg-comparetreat.do"
 
+	glo regvars "mid_stress_r post_stress_r"
+	glo regtitle "Treatment effects across domains -- Midline and endline stress"
+	glo regpath "REG-stress"
+	do "$do_dir/custom_tables/reg-comparetreat.do"
+
 	/* Control variables */
 
 	glo yfillmiss ""
