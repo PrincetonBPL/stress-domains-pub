@@ -421,28 +421,29 @@ gen time_aucraw = (3/12)*(time_indiffraw_3+time_indiffraw_4)/2 + (6/12)*(time_in
 gen time_auc = time_aucraw / time_aucmax
 la var time_auc "Area under the curve"
 
-egen time_avgindiff = rowmean(time_indiff_3 time_indiff_4 time_indiff_6 time_indiff_9)
+egen time_avgindiff = rowmean(time_indiff_?)
 la var time_avgindiff "Avg. indifference point"
 
-egen time_avgfrac = rowmean(time_frac_3 time_frac_4 time_frac_6 time_frac_9)
+egen time_avgfrac = rowmean(time_frac_?)
 la var time_avgfrac "Prop. of patient choice"
 
-egen time_avggeometric = rowmean(time_geometric_3 time_geometric_4 time_geometric_6 time_geometric_9)
+egen time_avggeometric = rowmean(time_geometric_?)
 la var time_avggeometric "Avg. geometric discounting"
 
-egen time_avgexponential = rowmean(time_exponential_3 time_exponential_4 time_exponential_6 time_exponential_9)
+egen time_avgexponential = rowmean(time_exponential_?)
 la var time_avgexponential "Avg. exponential decay"
 
-egen time_avghyperbolic = rowmean(time_hyperbolic_3 time_hyperbolic_4 time_hyperbolic_6 time_hyperbolic_9)
+egen time_avghyperbolic = rowmean(time_hyperbolic_?)
 la var time_avghyperbolic "Avg. hyperbolic decay"
 
 gen time_stationarity = time_exponential_9 - time_exponential_6
 la var time_stationarity "Dept. from stationarity"
 
+gen time_decrimp0 = time_exponential_7 - time_exponential_1
 gen time_decrimp1 = time_exponential_4 - time_exponential_3
 gen time_decrimp2 = time_exponential_6 - time_exponential_4
 
-egen time_decrimp = rowmean(time_decrimp*)
+egen time_decrimp = rowmean(time_decrimp0-time_decrimp2)
 la var time_decrimp "Decreasing impatience"
 
 ***********************
