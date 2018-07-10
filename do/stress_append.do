@@ -401,21 +401,21 @@ foreach delay in 0m1m 0m2m 0m3m 0m6m 0m9m 0m12m 1m2m 6m9m 6m12m {
 	la var time_frac_`i' "Avg. patient choice"
 
 	gen time_indiffraw_`i' = time_SSamount5_`i' - abs(time_SSamount5_`i' - time_SSamount4_`i') / 2 if time_response5_`i' == 1
-	replace time_indiffraw_`i' = time_SSamount5_`i' + abs(time_SSamount5_`i' - time_SSamount4_`i') / 2 if time_response5_`i' == 0
+	replace time_indiffraw_`i' = time_SSamount5_`i' + abs(time_SSamount5_`i' - time_LLamount) / 2 if time_response5_`i' == 0
 	la var time_indiffraw_`i' "Indifference point (raw)"
 
 	gen time_indiff_`i' = time_indiffraw_`i' / time_LLamount
 	la var time_indiff_`i' "Indifference point"
 
-	gen time_exponential_`i' = -ln(time_indiff_`i'/time_LLamount)/(`t'-`t0'/12)
+	gen time_exponential_`i' = -ln(time_indiff_`i')/(`t'-`t0'/12)
 	la var time_exponential_`i' "Exp. discount factor"
 
-	gen time_hyperbolic_`i' = (time_LLamount/time_indiff_`i' - 1)/(`t'-`t0'/12)
+	gen time_hyperbolic_`i' = (1/time_indiff_`i' - 1)/(`t'-`t0'/12)
 	la var time_hyperbolic_`i' "Hyp. discount factor"
 
 	** Top-code geometric df for outliers **
 
-	gen time_georaw_`i' = (time_indiffraw_`i'/time_LLamount)^-(12/`t'-`t0') - 1
+	gen time_georaw_`i' = (time_indiff_`i')^-(12/`t'-`t0') - 1
 
 	winsor time_georaw_`i', p(0.05) highonly gen(time_geometric_`i')
 	la var time_geometric_`i' "Geo. discount factor"

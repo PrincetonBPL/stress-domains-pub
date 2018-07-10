@@ -33,10 +33,10 @@ adopath + "$ado_dir"
 
 /* What do you want to do? */
 
-glo cleandataflag = 0				// Convert and clean Z-Tree data
-glo appenddataflag = 0				// Harmonize all experiments into unified dataset
-glo summaryflag = 0					// Output summary statistics
-glo regtablesflag = 0				// Output regression tables
+glo cleandataflag = 1				// Convert and clean Z-Tree data
+glo appenddataflag = 1				// Harmonize all experiments into unified dataset
+glo summaryflag = 1					// Output summary statistics
+glo regtablesflag = 1				// Output regression tables
 glo figuresflag = 1					// Create figures for publication
 
 /* Analysis options */
@@ -45,7 +45,7 @@ glo nasflag = 1						// Manipulation checks
 glo timeflag = 1					// Panel regression on temporal discounting
 glo riskflag = 1					// Regression on risk preferences
 
-glo permutations = 10000			// Permutations for randmization inference
+glo permutations = 10			// Permutations for randmization inference
 glo USDconvertflag = 1 				// Convert KES to USD
 glo ppprate = 1 / 39.56				// KES to USD ppp factor (Source: World Bank, International Comparison Program database)
 
