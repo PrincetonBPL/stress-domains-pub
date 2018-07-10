@@ -2,7 +2,7 @@
 ** Author: Justin Abraham
 ** Desc: Create figures for publication
 
-// Manipulation //
+// Manipulation impulse response //
 
 use "$data_dir/Stress_FinalWide.dta", clear
 keep if exp_cpr == 1
@@ -30,23 +30,79 @@ foreach var in stress frust NAStot {
     gen `var'_ub = `var' + `var'_sem
     gen `var'_lb = `var' - `var'_sem
 
-    tw (connected `var' period if treatment == 1, msymbol(o) color(black)) (connected `var' period if treatment == 0, msymbol(oh) color(black) lpattern(dash)) (rcap `var'_ub `var'_lb period, color(black)), ytitle(`:var la `var'') xtitle("") xlabel(0(1)2, valuelabel) legend(order(1 "Treatment" 2 "Control")) graphregion(color(white))
-    gr export "$fig_dir/line-`var'.eps", replace
-    cap noi: !epstopdf "line_`var'.eps"
+    #delimit ;
+
+        tw
+        (connected `var' period if treatment == 1, msymbol(o) color(black))
+        (connected `var' period if treatment == 0, msymbol(oh) color(black) lpattern(dash))
+        (rcap `var'_ub `var'_lb period, color(black)),
+        ytitle(`:var la `var'') xtitle("")
+        xlabel(0(1)2, valuelabel)
+        legend(order(1 "Treatment" 2 "Control"))
+        graphregion(color(white));
+        gr export "$fig_dir/line-`var'.eps", replace;
+
+    #delimit cr
 
 }
 
-// Temporal Discounting //
+// Temporal discounting treatment effect //
 
 use "$data_dir/Stress_FinalWide.dta", clear
+keep if exp_cpr == 1
 
 foreach var of varlist $ytime {
 
-    graph bar `var' if exp_cpr == 1, over(treatment) ytitle(`:var la `var'') bar(1, lcolor(black) fcolor(gs8)) bar(2, lcolor(black) fcolor(gs8)) graphregion(color(white))
-    graph export "$fig_dir/bar-`var'.eps", replace
-    cap noi: !epstopdf "bar-`var'.eps"
+    qui reg `var' treatment, vce(cl sessionnum)
+    est sto `var'_est
+
+    loc la_`var' "`: var la `var''"
 
 }
+
+collapse (mean) $ytime, by(treatment)
+la val treatment la_treat
+
+foreach var of varlist $ytime {
+
+    est res `var'_est
+    gen `var'_ub = `var' + _se[treatment] if treatment == 1
+    gen `var'_lb = `var' - _se[treatment] if treatment == 1
+
+    qui test treatment = 0
+    loc startext ""
+    if r(p) <= 0.10 loc startext "*"
+    if r(p) <= 0.05 loc startext "**"
+    if r(p) <= 0.01 loc startext "***"
+
+    if (_b[_cons] + _b[treatment] < 0) {
+        loc starpos = _b[_cons] + _b[treatment] - _se[treatment]
+        loc starplace "s"
+    }
+    else {
+        loc starpos = _b[_cons] + _b[treatment] + _se[treatment]
+        loc starplace "n"
+    }
+
+    #delimit ;
+
+        tw
+        (bar `var' treatment if treatment == 0, lcolor(gs0) fcolor(gs8) barwidth(0.6))
+        (bar `var' treatment if treatment == 1, lcolor(gs0) fcolor(gs8) barwidth(0.6))
+        (rcap `var'_ub `var'_lb treatment, lcolor(gs0)),
+        text(`starpos' 1 `"`startext'"', size(huge) place(`starplace'))
+        ytitle(`la_`var'') xtitle("")
+        ylabel(#6) xlabel(0(1)1, valuelabel)
+        yscale(range(0))
+        legend(off)
+        graphregion(color(white));
+        graph export "$fig_dir/bar-`var'.eps", replace;
+
+    #delimit cr
+
+}
+
+// Plot discounting function //
 
 use "$data_dir/Stress_FinalTime.dta", clear
 keep if exp_cpr == 1
@@ -63,16 +119,67 @@ foreach var in time_patient time_indiff time_exponential {
     gen `var'_ub = `var' + `var'_sem
     gen `var'_lb = `var' - `var'_sem
 
-    tw (connected `var' time_delaymo if time_immediate == 1 & treatment == 1, msymbol(o) color(black)) (connected `var' time_delaymo if time_immediate == 1 & treatment == 0, msymbol(oh) color(black) lpattern(dash)) (scatter `var' time_delaymo if time_immediate == 0 & treatment == 1, msymbol(o) color(black)) (scatter `var' time_delaymo if time_immediate == 0 & treatment == 0, msymbol(oh) color(black)) (rcap `var'_ub `var'_lb time_delaymo, color(black)), ytitle(`:var la `var'') xtitle("Months") xlabel(0(3)12, valuelabel) legend(order(1 "Treatment" 2 "Control")) graphregion(color(white))
-    gr export "$fig_dir/line-`var'.eps", replace
-    cap noi: !epstopdf "line_`var'.eps"
+    #delimit ;
+
+        tw
+        (connected `var' time_delaymo if time_immediate == 1 & treatment == 1, msymbol(o) color(black))
+        (connected `var' time_delaymo if time_immediate == 1 & treatment == 0, msymbol(oh) color(black) lpattern(dash)) (scatter `var' time_delaymo if time_immediate == 0 & treatment == 1, msymbol(o) color(black))
+        (scatter `var' time_delaymo if time_immediate == 0 & treatment == 0, msymbol(oh) color(black))
+        (rcap `var'_ub `var'_lb time_delaymo, color(black)),
+        ytitle(`:var la `var'') xtitle("Months")
+        xlabel(0(3)12, valuelabel)
+        legend(order(1 "Treatment" 2 "Control"))
+        graphregion(color(white));
+        gr export "$fig_dir/line-`var'.eps", replace;
+
+    #delimit cr
 
 }
 
-// Risk Aversion //
+// Risk aversion treatment effect //
 
 use "$data_dir/Stress_FinalWide.dta", clear
+keep if exp_cpr == 1
 
-graph bar risk_crra if exp_cpr == 1, over(treatment) ytitle("Coefficient of relative risk aversion") bar(1, lcolor(black) fcolor(gs8)) bar(2, lcolor(black) fcolor(gs8)) graphregion(color(white))
-graph export "$fig_dir/bar-risk_crra.eps", replace
-cap noi: !epstopdf "bar-risk_crra.eps"
+qui reg risk_crra treatment, vce(cl sessionnum)
+est sto regest
+
+collapse (mean) risk_crra, by(treatment)
+
+la var risk_crra "Coefficient of relative risk aversion"
+la val treatment la_treat
+
+est res regest
+gen risk_crra_ub = risk_crra + _se[treatment] if treatment == 1
+gen risk_crra_lb = risk_crra - _se[treatment] if treatment == 1
+
+qui test treatment = 0
+loc startext ""
+if r(p) <= 0.10 loc startext "*"
+if r(p) <= 0.05 loc startext "**"
+if r(p) <= 0.01 loc startext "***"
+
+if (_b[_cons] + _b[treatment] < 0) {
+    loc starpos = _b[_cons] + _b[treatment] - _se[treatment]
+    loc starplace "s"
+}
+else {
+    loc starpos = _b[_cons] + _b[treatment] + _se[treatment]
+    loc starplace "n"
+}
+
+#delimit ;
+
+    tw
+    (bar risk_crra treatment if treatment == 0, lcolor(gs0) fcolor(gs8) barwidth(0.6))
+    (bar risk_crra treatment if treatment == 1, lcolor(gs0) fcolor(gs8) barwidth(0.6))
+    (rcap risk_crra_ub risk_crra_lb treatment, lcolor(gs0)),
+    text(`starpos' 1 `"`startext'"', size(huge) place(`starplace'))
+    ytitle("Coefficient of relative risk aversion") xtitle("")
+    ylabel(#6) xlabel(0(1)1, valuelabel)
+    yscale(range(0))
+    legend(off)
+    graphregion(color(white));
+    graph export "$fig_dir/bar-risk_crra.eps", replace;
+
+#delimit cr
