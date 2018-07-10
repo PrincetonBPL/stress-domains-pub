@@ -38,6 +38,16 @@ foreach var in stress frust NAStot {
 
 // Temporal Discounting //
 
+use "$data_dir/Stress_FinalWide.dta", clear
+
+foreach var of varlist $ytime {
+
+    graph bar `var' if exp_cpr == 1, over(treatment) ytitle(`:var la `var'') bar(1, lcolor(black) fcolor(gs8)) bar(2, lcolor(black) fcolor(gs8)) graphregion(color(white))
+    graph export "$fig_dir/bar-`var'.eps", replace
+    cap noi: !epstopdf "bar-`var'.eps"
+
+}
+
 use "$data_dir/Stress_FinalTime.dta", clear
 keep if exp_cpr == 1
 keep sid experiment sessionnum treatment time_horizon time_delaymo time_immediate time_patient time_indiff time_exponential
@@ -64,5 +74,5 @@ foreach var in time_patient time_indiff time_exponential {
 use "$data_dir/Stress_FinalWide.dta", clear
 
 graph bar risk_crra if exp_cpr == 1, over(treatment) ytitle("Coefficient of relative risk aversion") bar(1, lcolor(black) fcolor(gs8)) bar(2, lcolor(black) fcolor(gs8)) graphregion(color(white))
-graph export "$fig_dir/bar-crra.eps", replace
-cap noi: !epstopdf "bar-crra.eps"
+graph export "$fig_dir/bar-risk_crra.eps", replace
+cap noi: !epstopdf "bar-risk_crra.eps"

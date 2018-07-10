@@ -33,10 +33,10 @@ adopath + "$ado_dir"
 
 /* What do you want to do? */
 
-glo cleandataflag = 1				// Convert and clean Z-Tree data
-glo appenddataflag = 1				// Harmonize all experiments into unified dataset
+glo cleandataflag = 0				// Convert and clean Z-Tree data
+glo appenddataflag = 0				// Harmonize all experiments into unified dataset
 glo summaryflag = 0					// Output summary statistics
-glo regtablesflag = 1				// Output regression tables
+glo regtablesflag = 0				// Output regression tables
 glo figuresflag = 1					// Create figures for publication
 
 /* Analysis options */
